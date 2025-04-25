@@ -1,7 +1,7 @@
 
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { PartyPopper, Planet, FerrisWheel, Museum, Rocket, Map } from "lucide-react";
+import { PartyPopper, Globe, Palmtree, Building, Rocket, Map } from "lucide-react";
 
 interface Category {
   id: string;
@@ -12,9 +12,9 @@ interface Category {
 const categories: Category[] = [
   { id: "all", name: "Все", icon: <Map className="h-5 w-5" /> },
   { id: "events", name: "Мероприятия", icon: <PartyPopper className="h-5 w-5" /> },
-  { id: "science", name: "Наука", icon: <Planet className="h-5 w-5" /> },
-  { id: "entertainment", name: "Развлечения", icon: <FerrisWheel className="h-5 w-5" /> },
-  { id: "culture", name: "Культура", icon: <Museum className="h-5 w-5" /> },
+  { id: "science", name: "Наука", icon: <Globe className="h-5 w-5" /> },
+  { id: "entertainment", name: "Развлечения", icon: <Palmtree className="h-5 w-5" /> },
+  { id: "culture", name: "Культура", icon: <Building className="h-5 w-5" /> },
   { id: "brand", name: "Бренды", icon: <Rocket className="h-5 w-5" /> },
 ];
 
