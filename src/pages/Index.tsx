@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
@@ -95,6 +94,11 @@ const usageCategories = [
     icon: Building
   }
 ];
+import EventsSection from "@/components/EventsSection";
+import ScienceSection from "@/components/ScienceSection";
+import EntertainmentSection from "@/components/EntertainmentSection";
+import CultureSection from "@/components/CultureSection";
+import BusinessSection from "@/components/BusinessSection";
 
 const Index: React.FC = () => {
   const [city, setCity] = useState("");
@@ -168,6 +172,13 @@ const Index: React.FC = () => {
             </div>
           </div>
         </section>
+
+        {/* Category Sections */}
+        <EventsSection />
+        <ScienceSection />
+        <EntertainmentSection />
+        <CultureSection />
+        <BusinessSection />
 
         {/* Dome Sizes Section */}
         <section className="py-16 bg-gradient-to-br from-purple-50 to-pink-50">
