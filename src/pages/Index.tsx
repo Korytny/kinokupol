@@ -1,8 +1,14 @@
+
 import React, { useState } from "react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import CategoryFilter from "@/components/CategoryFilter";
 import PropertyGrid from "@/components/PropertyGrid";
+import EventsSection from "@/components/EventsSection";
+import ScienceSection from "@/components/ScienceSection";
+import EntertainmentSection from "@/components/EntertainmentSection";
+import CultureSection from "@/components/CultureSection";
+import BusinessSection from "@/components/BusinessSection";
 import Footer from "@/components/Footer";
 import { Property } from "@/components/PropertyCard";
 
@@ -78,6 +84,13 @@ const Index: React.FC = () => {
         <div className="bg-white">
           <CategoryFilter onSelectCategory={handleCategorySelect} />
           <PropertyGrid properties={sampleProperties} selectedCategory={selectedCategory} />
+          
+          {/* Category specific sections */}
+          <EventsSection />
+          <ScienceSection />
+          <EntertainmentSection />
+          <CultureSection />
+          <BusinessSection />
         </div>
       </div>
       <Footer />
