@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Star } from "lucide-react";
 
@@ -19,16 +18,14 @@ interface PropertyCardProps {
 const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
   return (
     <div className="property-card hover-scale">
-      {/* Property Image */}
-      <div className="aspect-square relative overflow-hidden">
+      <div className="aspect-square relative overflow-hidden rounded-xl">
         <img 
           src={property.imageUrl} 
           alt={property.title} 
-          className="h-full w-full object-cover"
+          className="h-full w-full object-cover transition-transform duration-300 hover:scale-110"
         />
       </div>
 
-      {/* Property Details */}
       <div className="p-4">
         <div className="flex justify-between items-start">
           <h3 className="font-medium text-lg line-clamp-1">{property.title}</h3>
@@ -39,7 +36,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
         </div>
         <p className="text-gray-500 text-sm mb-2">{property.location}</p>
         <p className="font-semibold mt-2">
-          ${property.price} <span className="font-normal text-gray-500">night</span>
+          {property.price.toLocaleString('ru-RU')} ₽<span className="font-normal text-gray-500">/день</span>
         </p>
       </div>
     </div>

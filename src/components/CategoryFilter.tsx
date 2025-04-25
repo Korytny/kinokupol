@@ -1,7 +1,7 @@
 
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Home, Building, House, Bed, Users, MapPin } from "lucide-react";
+import { PartyPopper, Planet, FerrisWheel, Museum, Rocket, Map } from "lucide-react";
 
 interface Category {
   id: string;
@@ -10,12 +10,12 @@ interface Category {
 }
 
 const categories: Category[] = [
-  { id: "all", name: "All", icon: <MapPin className="h-5 w-5" /> },
-  { id: "apartment", name: "Apartments", icon: <Building className="h-5 w-5" /> },
-  { id: "house", name: "Houses", icon: <House className="h-5 w-5" /> },
-  { id: "hotel", name: "Hotels", icon: <Bed className="h-5 w-5" /> },
-  { id: "cabin", name: "Cabins", icon: <Home className="h-5 w-5" /> },
-  { id: "villa", name: "Villas", icon: <Users className="h-5 w-5" /> },
+  { id: "all", name: "Все", icon: <Map className="h-5 w-5" /> },
+  { id: "events", name: "Мероприятия", icon: <PartyPopper className="h-5 w-5" /> },
+  { id: "science", name: "Наука", icon: <Planet className="h-5 w-5" /> },
+  { id: "entertainment", name: "Развлечения", icon: <FerrisWheel className="h-5 w-5" /> },
+  { id: "culture", name: "Культура", icon: <Museum className="h-5 w-5" /> },
+  { id: "brand", name: "Бренды", icon: <Rocket className="h-5 w-5" /> },
 ];
 
 interface CategoryFilterProps {
