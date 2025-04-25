@@ -6,6 +6,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import DomeSize from "./pages/DomeSize";
+import CategoryTemplate from "./pages/CategoryTemplate";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -19,6 +20,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/dome/:size" element={<DomeSize />} />
+          <Route path="/category/:category" element={<CategoryTemplate />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </TooltipProvider>
