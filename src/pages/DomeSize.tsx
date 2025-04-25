@@ -13,8 +13,6 @@ import DomeCTA from "@/components/dome/DomeCTA";
 const DomeSize = () => {
   const { size } = useParams<{ size: string }>();
   
-  // Here we could use the size param to load specific content for each dome size
-  
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />

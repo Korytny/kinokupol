@@ -19,6 +19,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				sans: ['Poppins', 'sans-serif'], // Primary font
+				body: ['Poppins', 'sans-serif'], // Secondary font for body text
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -63,11 +67,15 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				airbnb: {
-					primary: "#FF5A5F",
-					secondary: "#00A699",
-					dark: "#484848",
-					light: "#F7F7F7"
+				// КиноКупол custom colors
+				kinokupol: {
+					primary: "#9b87f5", // Primary purple
+					secondary: "#7E69AB", // Secondary purple
+					tertiary: "#6E59A5", // Tertiary purple
+					dark: "#1A1F2C", // Dark purple
+					light: "#D6BCFA", // Light purple
+					"soft-purple": "#E5DEFF", // Soft purple
+					"soft-blue": "#D3E4FD", // Soft blue
 				}
 			},
 			borderRadius: {
@@ -93,6 +101,10 @@ export default {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.3s ease-out'
+			},
+			backgroundImage: {
+				'main-gradient': 'linear-gradient(135deg, #9b87f5 0%, #D6BCFA 100%)',
+				'secondary-gradient': 'linear-gradient(135deg, #E5DEFF 0%, #D3E4FD 100%)',
 			}
 		}
 	},

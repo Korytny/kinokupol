@@ -1,14 +1,18 @@
 
 import React from "react";
 import { Button } from "@/components/ui/button";
+import { useParams } from "react-router-dom";
 
 const DomeCTA = () => {
+  const { size } = useParams<{ size: string }>();
+  const domeSize = size?.toUpperCase() || "L";
+
   return (
     <section className="py-20 bg-purple-900 text-white">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Готовы организовать мероприятие в куполе L?
+            Готовы организовать мероприятие в куполе {domeSize}?
           </h2>
           <p className="text-lg text-purple-100 mb-8">
             Наша команда поможет спланировать ваше мероприятие от начала до конца.
