@@ -22,6 +22,7 @@ export default {
 			fontFamily: {
 				sans: ['Poppins', 'sans-serif'], // Primary font
 				body: ['Poppins', 'sans-serif'], // Secondary font for body text
+				heading: ['Space Grotesk', 'sans-serif'], // New heading font
 			},
 			colors: {
 				border: 'hsl(var(--border))',
@@ -76,6 +77,14 @@ export default {
 					light: "#D6BCFA", // Light purple
 					"soft-purple": "#E5DEFF", // Soft purple
 					"soft-blue": "#D3E4FD", // Soft blue
+				},
+				// Science section-inspired colors
+				science: {
+					accent: "#80dfd5", // Light turquoise
+					dark: "#243949", // Dark slate blue
+					darker: "#152435", // Very dark slate blue
+					light: "#c5f4f0", // Lighter turquoise
+					text: "#80dfd5", // Turquoise text
 				}
 			},
 			borderRadius: {
@@ -105,6 +114,8 @@ export default {
 			backgroundImage: {
 				'main-gradient': 'linear-gradient(135deg, #9b87f5 0%, #D6BCFA 100%)',
 				'secondary-gradient': 'linear-gradient(135deg, #E5DEFF 0%, #D3E4FD 100%)',
+				'science-gradient': 'linear-gradient(to right, #243949 0%, #517fa4 100%)',
+				'glow-gradient': 'linear-gradient(to right, #80dfd5 0%, #4ea8de 100%)',
 			}
 		}
 	},

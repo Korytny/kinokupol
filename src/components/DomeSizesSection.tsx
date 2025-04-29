@@ -47,11 +47,11 @@ const domeSizes = [
 
 const DomeSizesSection = () => {
   return (
-    <section className="py-16 bg-gradient-to-br from-purple-50 to-pink-50">
+    <section className="section section-light">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-purple-900">Размеры куполов</h2>
-          <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+          <h2 className="section-title">Размеры куполов</h2>
+          <p className="section-subtitle text-slate-600">
             Выберите идеальный размер купола для вашего мероприятия, от компактного для небольших групп
             до впечатляющего XL-купола для масштабных событий
           </p>
@@ -60,7 +60,7 @@ const DomeSizesSection = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {domeSizes.map((dome) => (
             <Link to={`/dome/${dome.id}`} key={dome.id}>
-              <Card className="hover:shadow-lg transition-shadow overflow-hidden h-full hover-scale">
+              <Card className="h-full hover-scale overflow-hidden border border-slate-200/50">
                 <div className="relative">
                   <AspectRatio ratio={16/9}>
                     <img 
@@ -69,7 +69,7 @@ const DomeSizesSection = () => {
                       className="object-cover w-full h-full"
                     />
                   </AspectRatio>
-                  <div className="absolute top-2 right-2 bg-purple-600 text-white px-3 py-1 rounded-full text-sm">
+                  <div className="absolute top-2 right-2 bg-gradient-to-r from-teal-400 to-blue-500 text-white px-3 py-1 rounded-full text-sm">
                     {dome.id.toUpperCase()}
                   </div>
                 </div>
@@ -79,16 +79,16 @@ const DomeSizesSection = () => {
                 </CardHeader>
                 <CardContent>
                   <div className="flex items-center gap-2 mb-2">
-                    <Users className="h-4 w-4 text-purple-600" />
-                    <span className="text-sm text-gray-600">{dome.capacity}</span>
+                    <Users className="h-4 w-4 text-[#80dfd5]" />
+                    <span className="text-sm text-slate-600">{dome.capacity}</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Building className="h-4 w-4 text-purple-600" />
-                    <span className="text-sm text-gray-600">Диаметр: {dome.diameter}, Высота: {dome.height}</span>
+                    <Building className="h-4 w-4 text-[#80dfd5]" />
+                    <span className="text-sm text-slate-600">Диаметр: {dome.diameter}, Высота: {dome.height}</span>
                   </div>
                 </CardContent>
                 <CardFooter>
-                  <Button variant="outline" className="w-full">
+                  <Button variant="outline" className="w-full btn-outline">
                     Подробнее <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </CardFooter>
@@ -102,4 +102,3 @@ const DomeSizesSection = () => {
 };
 
 export default DomeSizesSection;
-
