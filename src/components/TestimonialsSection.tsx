@@ -1,76 +1,64 @@
-
 import React from "react";
-import { Card, CardContent } from "@/components/ui/card";
-import { Star, Quote } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
-const TestimonialsSection = () => {
+interface TestimonialType {
+  text: string;
+  author: string;
+  position: string;
+  company: string;
+  logo: string;
+}
+
+const testimonials: TestimonialType[] = [
+  {
+    text: "Запуск нашего нового продукта в купольном кинотеатре создал wow-эффект у клиентов и привлек небывалое внимание прессы.",
+    author: "Иван Смирнов",
+    position: "Директор по маркетингу",
+    company: "TechData",
+    logo: "TD"
+  },
+  {
+    text: "Корпоративное мероприятие в формате купола позволило нам представить стратегию развития компании в совершенно новом свете.",
+    author: "Елена Васильева",
+    position: "CEO",
+    company: "Global Systems",
+    logo: "GS"
+  }
+];
+
+const TestimonialsSection: React.FC = () => {
   return (
-    <section className="section section-light">
+    <section className="py-16 bg-gradient-to-r from-slate-900 to-blue-900 text-white overflow-hidden">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="section-title">Отзывы клиентов</h2>
-          <p className="section-subtitle text-slate-600">
-            Узнайте, что говорят о нас клиенты, которые уже использовали купольные решения КиноКупол
-          </p>
-        </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <Card className="card-light">
-            <CardContent className="pt-6">
-              <Quote className="h-8 w-8 text-[#80dfd5] mb-4 opacity-60" />
-              <p className="italic text-slate-700 mb-4">
-                "Организовали корпоративное мероприятие в куполе L. Впечатления превзошли все ожидания, 
-                гости были в восторге от формата. Обязательно будем сотрудничать снова!"
-              </p>
-              <div className="flex items-center">
-                <div className="w-10 h-10 rounded-full bg-gray-300 mr-3 glow-border">
-                  <div className="w-10 h-10 rounded-full bg-gray-300 relative"></div>
-                </div>
-                <div>
-                  <p className="font-medium text-slate-800">Александр Петров</p>
-                  <p className="text-sm text-slate-500">CEO, Tech Corp</p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+        <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20">
+          <div className="text-center mb-10">
+            <h3 className="text-2xl font-bold mb-2 text-white">Что говорят наши клиенты</h3>
+            <p className="text-blue-200">Отзывы ведущих компаний, использовавших купольные решения</p>
+          </div>
           
-          <Card className="card-light">
-            <CardContent className="pt-6">
-              <Quote className="h-8 w-8 text-[#80dfd5] mb-4 opacity-60" />
-              <p className="italic text-slate-700 mb-4">
-                "Использовали купол M для образовательной программы в школе. Дети были в восторге от 
-                иммерсивного опыта, а педагоги отметили высокую эффективность такого формата обучения."
-              </p>
-              <div className="flex items-center">
-                <div className="w-10 h-10 rounded-full bg-gray-300 mr-3 glow-border">
-                  <div className="w-10 h-10 rounded-full bg-gray-300 relative"></div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {testimonials.map((testimonial, index) => (
+              <div key={index} className="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20">
+                <div className="flex items-center mb-4">
+                  <div className="bg-teal-400 text-slate-900 w-10 h-10 rounded-full flex items-center justify-center font-bold mr-4">
+                    {testimonial.logo}
+                  </div>
+                  <div>
+                    <div className="font-medium text-white">{testimonial.company}</div>
+                    <div className="text-sm text-blue-300">{testimonial.position}</div>
+                  </div>
                 </div>
-                <div>
-                  <p className="font-medium text-slate-800">Мария Иванова</p>
-                  <p className="text-sm text-slate-500">Директор школы №123</p>
-                </div>
+                <p className="italic text-blue-100 mb-4">"{testimonial.text}"</p>
+                <div className="text-sm font-medium text-white">— {testimonial.author}</div>
               </div>
-            </CardContent>
-          </Card>
+            ))}
+          </div>
           
-          <Card className="card-light">
-            <CardContent className="pt-6">
-              <Quote className="h-8 w-8 text-[#80dfd5] mb-4 opacity-60" />
-              <p className="italic text-slate-700 mb-4">
-                "Заказывали купол XL для фестиваля. Команда КиноКупол проявила себя как надежный партнер, 
-                все было организовано на высшем уровне, несмотря на сжатые сроки."
-              </p>
-              <div className="flex items-center">
-                <div className="w-10 h-10 rounded-full bg-gray-300 mr-3 glow-border">
-                  <div className="w-10 h-10 rounded-full bg-gray-300 relative"></div>
-                </div>
-                <div>
-                  <p className="font-medium text-slate-800">Дмитрий Сидоров</p>
-                  <p className="text-sm text-slate-500">Организатор фестиваля ArtFest</p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+          <div className="flex justify-center mt-8">
+            <Button variant="outline" className="border-white/30 text-white hover:bg-white/10">
+              Смотреть все отзывы
+            </Button>
+          </div>
         </div>
       </div>
     </section>

@@ -27,12 +27,12 @@ const DomeTestimonials = () => {
   ];
 
   return (
-    <section className="py-16 bg-gradient-to-br from-purple-50 to-pink-50">
+    <section className="py-16 bg-gradient-to-r from-slate-900 to-blue-900">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-purple-900">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-teal-200">
           Отзывы клиентов
         </h2>
-        <p className="text-center text-gray-700 mb-12 max-w-3xl mx-auto">
+        <p className="text-center text-blue-100 mb-12 max-w-3xl mx-auto">
           Узнайте, что говорят о нашем куполе L клиенты, которые уже организовали свои мероприятия
         </p>
 
@@ -40,13 +40,13 @@ const DomeTestimonials = () => {
           {testimonials.map((testimonial) => (
             <div 
               key={testimonial.id}
-              className="bg-white rounded-xl p-6 shadow-md"
+              className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20"
             >
               <div className="flex items-center mb-4">
                 {[...Array(5)].map((_, i) => (
                   <svg 
                     key={i} 
-                    className={`w-5 h-5 ${i < testimonial.rating ? 'text-yellow-400' : 'text-gray-300'}`} 
+                    className={`w-5 h-5 ${i < testimonial.rating ? 'text-yellow-300' : 'text-gray-500'}`} 
                     fill="currentColor" 
                     viewBox="0 0 20 20"
                   >
@@ -54,17 +54,17 @@ const DomeTestimonials = () => {
                   </svg>
                 ))}
               </div>
-              <blockquote className="mb-4 text-gray-700 italic">
+              <blockquote className="mb-4 text-blue-100 italic">
                 "{testimonial.content}"
               </blockquote>
-              <div className="font-medium text-purple-900">{testimonial.author}</div>
-              <div className="text-sm text-gray-600">{testimonial.role}</div>
+              <div className="font-medium text-teal-200">{testimonial.author}</div>
+              <div className="text-sm text-blue-200">{testimonial.role}</div>
             </div>
           ))}
         </div>
 
         <div className="mt-12 text-center">
-          <a href="#" className="text-purple-600 hover:text-purple-800 font-medium">
+          <a href="#" className="text-teal-300 hover:text-teal-200 font-medium">
             Смотреть все отзывы
           </a>
         </div>

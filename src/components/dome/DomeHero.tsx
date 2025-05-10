@@ -42,37 +42,44 @@ const DomeHero = () => {
   const domeData = domeSizesData[domeSize as keyof typeof domeSizesData] || domeSizesData.l;
 
   return (
-    <section className="relative h-[600px] overflow-hidden bg-gradient-to-br from-purple-50 to-pink-50">
-      <div className="container mx-auto px-4 h-full flex flex-col justify-center items-center text-center">
-        <div className="bg-white/90 backdrop-blur-sm rounded-xl p-8 max-w-4xl">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-purple-900">
+    <section className="relative h-[600px] overflow-hidden bg-gradient-to-r from-slate-900 to-blue-900">
+      <div className="container mx-auto px-4 h-full flex flex-col justify-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 text-center">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-teal-200">
             {domeData.name}
           </h1>
-          <p className="text-xl text-gray-700 mb-6">
+          <p className="text-xl text-blue-100 mb-6">
             {domeData.description}
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-4 mb-8">
-            <div className="flex items-center px-4 py-2 bg-purple-50 rounded-full">
-              <Building className="h-5 w-5 text-purple-600 mr-2" />
-              <span className="text-purple-900">Диаметр: {domeData.diameter}</span>
+          <div className="flex flex-wrap items-center justify-center gap-4 mb-8 mx-auto">
+            <div className="flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
+              <Building className="h-5 w-5 text-teal-300 mr-2" />
+              <span className="text-blue-100">Диаметр: {domeData.diameter}</span>
             </div>
-            <div className="flex items-center px-4 py-2 bg-purple-50 rounded-full">
-              <Building className="h-5 w-5 text-purple-600 mr-2" />
-              <span className="text-purple-900">Высота: {domeData.height}</span>
+            <div className="flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
+              <Building className="h-5 w-5 text-teal-300 mr-2" />
+              <span className="text-blue-100">Высота: {domeData.height}</span>
             </div>
-            <div className="flex items-center px-4 py-2 bg-purple-50 rounded-full">
-              <Building className="h-5 w-5 text-purple-600 mr-2" />
-              <span className="text-purple-900">Вместимость: {domeData.capacity}</span>
+            <div className="flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
+              <Building className="h-5 w-5 text-teal-300 mr-2" />
+              <span className="text-blue-100">Вместимость: {domeData.capacity}</span>
             </div>
           </div>
-          <Button className="bg-purple-600 hover:bg-purple-700">
+          <Button className="bg-gradient-to-r from-teal-400 to-blue-500 hover:from-teal-500 hover:to-blue-600 text-white mx-auto">
             Забронировать купол
           </Button>
         </div>
+        <div className="bg-gray-700/50 rounded-xl h-96 w-full overflow-hidden border border-white/20">
+          <img 
+            src={`/img/${domeSize}_dome.png`}
+            alt={`Фотография купола ${domeData.name}`}
+            className="object-cover w-full h-full"
+          />
+        </div>
+      </div>
       </div>
       
-      {/* Background visual effect */}
-      <div className="absolute -bottom-10 left-0 right-0 h-40 bg-white transform skew-y-3"></div>
     </section>
   );
 };

@@ -4,7 +4,6 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import HeroForm from "@/components/HeroForm";
 import DomeSizesSection from "@/components/DomeSizesSection";
-import UsageCategoriesSection from "@/components/UsageCategoriesSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import CTASection from "@/components/CTASection";
@@ -26,7 +25,6 @@ const Index: React.FC = () => {
         <CultureSection />
         <BusinessSection />
         <DomeSizesSection />
-        <UsageCategoriesSection />
         <FeaturesSection />
         <TestimonialsSection />
         <CTASection />

@@ -81,8 +81,8 @@ const ScienceSection: React.FC = () => {
           <div className="lg:w-1/2 relative">
             <div className="absolute -inset-0.5 bg-gradient-to-r from-teal-400 to-blue-500 rounded-xl blur opacity-50"></div>
             <img 
-              src="https://images.unsplash.com/photo-1470813740244-df37b8c1edcb" 
-              alt="Научная визуализация" 
+              src="/img/post11.jpg" 
+              alt="Научные программы под куполом КиноКупол" 
               className="relative rounded-xl w-full h-[400px] object-cover border border-white/20"
             />
           </div>

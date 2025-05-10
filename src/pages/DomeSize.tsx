@@ -14,7 +14,7 @@ const DomeSize = () => {
   const { size } = useParams<{ size: string }>();
   
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-gradient-to-r from-slate-900 to-blue-900 text-white">
       <Navbar />
       <main className="flex-grow">
         <DomeHero />

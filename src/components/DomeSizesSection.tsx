@@ -14,7 +14,7 @@ const domeSizes = [
     capacity: "До 30 человек",
     diameter: "6м",
     height: "3м",
-    image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81"
+    image: "/img/s_dome.png"
   },
   {
     id: "m",
@@ -23,7 +23,7 @@ const domeSizes = [
     capacity: "До 80 человек",
     diameter: "10м",
     height: "5м",
-    image: "https://images.unsplash.com/photo-1470813740244-df37b8c1edcb"
+    image: "/img/m_dome.png"
   },
   {
     id: "l",
@@ -32,7 +32,7 @@ const domeSizes = [
     capacity: "До 200 человек",
     diameter: "15м",
     height: "7.5м",
-    image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07"
+    image: "/img/l_dome.png"
   },
   {
     id: "xl",
@@ -41,17 +41,19 @@ const domeSizes = [
     capacity: "До 350 человек",
     diameter: "20м",
     height: "10м",
-    image: "https://images.unsplash.com/photo-1473177104440-ffee2f376098"
+    image: "/img/xl_dome.png"
   }
 ];
 
 const DomeSizesSection = () => {
   return (
-    <section className="section section-light">
+    <section className="py-16 bg-gradient-to-r from-slate-900 to-blue-900 text-white overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="section-title">Размеры куполов</h2>
-          <p className="section-subtitle text-slate-600">
+          <h2 className="text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-teal-200">
+            Размеры куполов
+          </h2>
+          <p className="text-blue-200 max-w-2xl mx-auto">
             Выберите идеальный размер купола для вашего мероприятия, от компактного для небольших групп
             до впечатляющего XL-купола для масштабных событий
           </p>
@@ -60,7 +62,7 @@ const DomeSizesSection = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {domeSizes.map((dome) => (
             <Link to={`/dome/${dome.id}`} key={dome.id}>
-              <Card className="h-full hover-scale overflow-hidden border border-slate-200/50">
+              <Card className="h-full hover-scale overflow-hidden bg-white/10 backdrop-blur-sm border border-white/20 hover:border-teal-400/50 transition-colors">
                 <div className="relative">
                   <AspectRatio ratio={16/9}>
                     <img 
@@ -74,21 +76,21 @@ const DomeSizesSection = () => {
                   </div>
                 </div>
                 <CardHeader>
-                  <CardTitle>{dome.name}</CardTitle>
-                  <CardDescription>{dome.description}</CardDescription>
+                  <CardTitle className="text-white">{dome.name}</CardTitle>
+                  <CardDescription className="text-blue-200">{dome.description}</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="flex items-center gap-2 mb-2">
-                    <Users className="h-4 w-4 text-[#80dfd5]" />
-                    <span className="text-sm text-slate-600">{dome.capacity}</span>
+                    <Users className="h-4 w-4 text-teal-300" />
+                    <span className="text-sm text-blue-100">{dome.capacity}</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Building className="h-4 w-4 text-[#80dfd5]" />
-                    <span className="text-sm text-slate-600">Диаметр: {dome.diameter}, Высота: {dome.height}</span>
+                    <Building className="h-4 w-4 text-teal-300" />
+                    <span className="text-sm text-blue-100">Диаметр: {dome.diameter}, Высота: {dome.height}</span>
                   </div>
                 </CardContent>
                 <CardFooter>
-                  <Button variant="outline" className="w-full btn-outline">
+                  <Button className="w-full bg-gradient-to-r from-teal-400 to-blue-500 hover:from-teal-500 hover:to-blue-600 text-white">
                     Подробнее <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </CardFooter>
