@@ -1,5 +1,5 @@
 
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -12,6 +12,10 @@ import DomeCTA from "@/components/dome/DomeCTA";
 
 const DomeSize = () => {
   const { size } = useParams<{ size: string }>();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [size]);
   
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-r from-slate-900 to-blue-900 text-white">
