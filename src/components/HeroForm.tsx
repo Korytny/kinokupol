@@ -28,7 +28,7 @@ const HeroForm = () => {
           <span className="relative inline-block">
             <span className="absolute inset-0 bg-gradient-to-r from-purple-400/30 to-teal-400/30 rounded-full blur-md opacity-80"></span>
             <span className="relative z-10 [text-shadow:_0_0_10px_rgba(200,160,255,0.7)]">
-              КиноКупол
+              КиноСфера
             </span>
           </span>
         </h1>

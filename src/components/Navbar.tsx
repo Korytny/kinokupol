@@ -5,12 +5,18 @@ import { Search, Phone } from "lucide-react";
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="sticky top-0 z-50 bg-white/10 backdrop-blur-md border-b border-white/20">
+    <nav 
+      className="sticky top-0 z-50 border-b border-white/20"
+      style={{
+        backgroundColor: 'rgb(40,20,40)',
+        backdropFilter: 'blur(10px)'
+      }}
+    >
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center">
           <div className="text-white font-bold text-2xl">
-            КиноКупол
+              КиноСфера
           </div>
         </Link>
 

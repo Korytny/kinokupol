@@ -61,7 +61,13 @@ const DomeSizesSection = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {domeSizes.map((dome) => (
             <Link to={`/dome/${dome.id}`} key={dome.id}>
-              <Card className="h-full hover-scale overflow-hidden bg-white/10 backdrop-blur-sm border border-white/20 hover:border-teal-400/50 transition-colors">
+              <Card 
+                className="h-full hover-scale overflow-hidden border border-white/20 transition-all duration-300"
+                style={{
+                  backgroundColor: 'rgb(40,20,40)',
+                  backdropFilter: 'blur(10px)'
+                }}
+              >
                 <div className="relative">
                   <AspectRatio ratio={16/9}>
                     <img 

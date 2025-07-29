@@ -10,7 +10,7 @@ interface EventCase {
 
 const eventCases: EventCase[] = [
   {
-    title: "Музыкальный фестиваль «Космофест»",
+    title: "Музыкальный фестиваль Космофест",
     description: "Иммерсивное пространство для 500 гостей с объемным звуком и визуализацией",
     imageUrl: "/img/post9.jpg"
   },
@@ -95,7 +95,11 @@ const EventsSection: React.FC = () => {
             {eventCases.map((caseItem, index) => (
               <div 
                 key={index} 
-                className="bg-white/10 backdrop-blur-sm rounded-xl hover:bg-white/15 transition-all duration-300 border border-white/20 overflow-hidden"
+                className="rounded-xl transition-all duration-300 border border-white/20 overflow-hidden hover:bg-[rgb(60,30,60)]"
+                style={{ 
+                  backgroundColor: 'rgb(40,20,40)',
+                  backdropFilter: 'blur(10px)'
+                }}
               >
                 <div className="h-48 overflow-hidden relative">
                   <img 

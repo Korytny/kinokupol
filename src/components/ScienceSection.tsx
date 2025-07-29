@@ -21,7 +21,13 @@ const ScienceSection: React.FC = () => {
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
-          <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl hover:bg-white/15 transition-all duration-300 border border-white/20">
+          <div 
+            className="p-8 rounded-xl transition-all duration-300 border border-white/20 hover:bg-[rgb(60,30,60)]"
+            style={{ 
+              backgroundColor: 'rgb(40,20,40)',
+              backdropFilter: 'blur(10px)'
+            }}
+          >
             <Globe className="h-12 w-12 text-teal-300 mb-4" />
             <h3 className="text-2xl font-semibold mb-4 text-teal-200">Планетарии</h3>
             <p className="text-purple-100">
@@ -39,7 +45,13 @@ const ScienceSection: React.FC = () => {
             </div>
           </div>
           
-          <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl hover:bg-white/15 transition-all duration-300 border border-white/20">
+          <div 
+            className="p-8 rounded-xl transition-all duration-300 border border-white/20 hover:bg-[rgb(60,30,60)]"
+            style={{ 
+              backgroundColor: 'rgb(40,20,40)',
+              backdropFilter: 'blur(10px)'
+            }}
+          >
             <FlaskConical className="h-12 w-12 text-teal-300 mb-4" />
             <h3 className="text-2xl font-semibold mb-4 text-teal-200">Научные центры</h3>
             <p className="text-purple-100">
@@ -57,7 +69,13 @@ const ScienceSection: React.FC = () => {
             </div>
           </div>
           
-          <div className="bg-white/10 backdrop-blur-sm p-8 rounded-xl hover:bg-white/15 transition-all duration-300 border border-white/20">
+          <div 
+            className="p-8 rounded-xl transition-all duration-300 border border-white/20 hover:bg-[rgb(60,30,60)]"
+            style={{ 
+              backgroundColor: 'rgb(40,20,40)',
+              backdropFilter: 'blur(10px)'
+            }}
+          >
             <AtomIcon className="h-12 w-12 text-teal-300 mb-4" />
             <h3 className="text-2xl font-semibold mb-4 text-teal-200">Образование</h3>
             <p className="text-purple-100">

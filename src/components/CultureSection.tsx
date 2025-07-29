@@ -98,7 +98,13 @@ const CultureSection: React.FC = () => {
           </div>
         </div>
         
-        <div className="bg-white/10 backdrop-blur-sm rounded-xl p-10 mb-16 border border-white/20">
+        <div 
+          className="rounded-xl p-10 mb-16 border border-white/20 hover:bg-[rgb(60,30,60)] transition-all duration-300"
+          style={{
+            backgroundColor: 'rgb(40,20,40)',
+            backdropFilter: 'blur(10px)'
+          }}
+        >
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
             <div className="p-4">
               <div className="text-4xl font-light text-teal-200 mb-2">12+</div>

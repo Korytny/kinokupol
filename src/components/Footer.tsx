@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
           <div>
             <Link to="/" className="inline-block mb-4">
               <div className="text-white font-bold text-2xl">
-                КиноКупол
+                КиноСфера
               </div>
             </Link>
             <p className="text-purple-200 mb-4">
@@ -85,7 +85,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-3">
               <li className="flex items-center gap-2 text-purple-200">
                 <Mail className="h-5 w-5 text-teal-300" />
-                <span>info@kinokupol.ru</span>
+                <span>info@kinosfera.ru</span>
               </li>
               <li className="flex items-center gap-2 text-purple-200">
                 <Phone className="h-5 w-5 text-teal-300" />
@@ -101,7 +101,7 @@ const Footer: React.FC = () => {
 
         <div className="border-t border-white/20 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
-            <p className="text-sm text-purple-200">© 2023 КиноКупол. Все права защищены.</p>
+            <p className="text-sm text-purple-200">© 2023 КиноСфера. Все права защищены.</p>
           </div>
           <div className="flex items-center gap-4">
             <a href="#" className="text-purple-200 hover:text-teal-300 transition-colors">

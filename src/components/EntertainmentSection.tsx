@@ -14,19 +14,19 @@ const entertainmentOptions: EntertainmentOption[] = [
   {
     title: "Детские шоу",
     icon: <PartyPopper className="h-6 w-6" />,
-    color: "bg-orange-500",
-    description: "Интерактивные программы для детей с анимацией и спецэффектами"
+    color: "bg-purple-400",
+    description: "Интерактивные программы с анимацией и спецэффектами"
   },
   {
     title: "Развлекательные программы",
     icon: <Theater className="h-6 w-6" />,
-    color: "bg-pink-500",
+    color: "bg-purple-200",
     description: "Шоу-программы для всей семьи с элементами театрализации"
   },
   {
     title: "Игровые симуляции",
     icon: <Gamepad className="h-6 w-6" />,
-    color: "bg-green-500",
+    color: "bg-purple-400",
     description: "Иммерсивные игровые миры с эффектом полного присутствия"
   }
 ];
@@ -81,14 +81,24 @@ const EntertainmentSection: React.FC = () => {
           </div>
           
           <div className="md:w-1/2">
-            <div className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl h-full border border-white/20">
+            <div 
+              className="p-8 rounded-2xl h-full border border-white/20"
+              style={{
+                backgroundColor: 'rgb(20,5,20)',
+                backdropFilter: 'blur(10px)'
+              }}
+            >
               <h3 className="text-3xl font-bold mb-6 text-teal-200">Развлекательные программы</h3>
               
               <div className="space-y-6">
                 {entertainmentOptions.map((option, index) => (
                   <div 
                     key={index} 
-                    className="bg-white/10 backdrop-blur-sm rounded-xl p-5 hover:bg-white/15 transition-all duration-300 flex items-start border border-white/20"
+                    className="rounded-xl p-5 transition-all duration-300 flex items-start border border-white/20 hover:bg-[rgb(60,30,60)]"
+                    style={{
+                      backgroundColor: 'rgb(40,20,40)',
+                      backdropFilter: 'blur(10px)'
+                    }}
                   >
                     <div className={`${option.color} p-3 rounded-xl text-white mr-4`}>
                       {option.icon}

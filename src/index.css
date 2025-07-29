@@ -8,7 +8,7 @@
 
 @layer base {
   :root {
-    --background: 275 60% 10%; /* New dark purple background (#1c0936) */
+    --background: 270 60% 6%; /* Very dark purple background (#0f0719) */
     --foreground: 0 0% 100%; /* White text for contrast */
 
     --card: 0 0% 100%;
@@ -141,7 +141,7 @@
   }
   
   .section-dark {
-    @apply bg-gradient-to-r from-kinokupol-brand-dark-purple to-kinokupol-brand-very-dark-purple text-white;
+    @apply bg-[#0f0719] text-white;
   }
   
   .section-light {

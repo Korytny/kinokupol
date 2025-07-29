@@ -13,7 +13,13 @@ const FeaturesSection = () => {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="card-dark">
+          <div 
+            className="rounded-xl p-6 border border-white/20 hover:bg-[rgb(60,30,60)] transition-all duration-300"
+            style={{
+              backgroundColor: 'rgb(40,20,40)',
+              backdropFilter: 'blur(10px)'
+            }}
+          >
             <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center mb-4">
               <Building className="h-6 w-6 text-[#80dfd5]" />
             </div>
@@ -23,7 +29,13 @@ const FeaturesSection = () => {
             </p>
           </div>
           
-          <div className="card-dark">
+          <div 
+            className="rounded-xl p-6 border border-white/20 hover:bg-[rgb(60,30,60)] transition-all duration-300"
+            style={{
+              backgroundColor: 'rgb(40,20,40)',
+              backdropFilter: 'blur(10px)'
+            }}
+          >
             <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center mb-4">
               <Users className="h-6 w-6 text-[#80dfd5]" />
             </div>
@@ -33,7 +45,13 @@ const FeaturesSection = () => {
             </p>
           </div>
           
-          <div className="card-dark">
+          <div 
+            className="rounded-xl p-6 border border-white/20 hover:bg-[rgb(60,30,60)] transition-all duration-300"
+            style={{
+              backgroundColor: 'rgb(40,20,40)',
+              backdropFilter: 'blur(10px)'
+            }}
+          >
             <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center mb-4">
               <Calendar className="h-6 w-6 text-[#80dfd5]" />
             </div>

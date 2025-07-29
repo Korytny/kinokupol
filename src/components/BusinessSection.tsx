@@ -102,7 +102,14 @@ const BusinessSection: React.FC = () => {
               features: ["PR-освещение", "Вирусный контент", "Лидогенерация"]
             }
           ].map((card, index) => (
-            <div key={index} className="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 hover:border-teal-400/50 transition-colors">
+            <div 
+              key={index} 
+              className="rounded-xl p-8 border border-white/20 hover:bg-[rgb(60,30,60)] transition-all duration-300"
+              style={{
+                backgroundColor: 'rgb(40,20,40)',
+                backdropFilter: 'blur(10px)'
+              }}
+            >
               <div className="bg-teal-400/20 p-3 rounded-xl inline-block mb-6">
                 {card.icon}
               </div>
