@@ -39,7 +39,11 @@ const DomeTestimonials = () => {
           {testimonials.map((testimonial) => (
             <div 
               key={testimonial.id}
-              className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20"
+              className="rounded-xl p-6 border border-white/20"
+              style={{
+                backgroundColor: 'rgb(40,20,40)',
+                backdropFilter: 'blur(10px)'
+              }}
             >
               <div className="flex items-center mb-4">
                 {[...Array(5)].map((_, i) => (

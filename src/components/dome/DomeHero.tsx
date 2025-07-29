@@ -44,7 +44,13 @@ const DomeHero = () => {
     <section className="relative h-[600px] overflow-hidden section-dark">
       <div className="container mx-auto px-4 h-full flex flex-col justify-center">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 text-center">
+          <div 
+            className="rounded-xl p-8 border border-white/20 text-center"
+            style={{
+              backgroundColor: 'rgb(40,20,40)',
+              backdropFilter: 'blur(10px)'
+            }}
+          >
           <h1 className="text-4xl md:text-6xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-teal-200">
             {domeData.name}
           </h1>
@@ -52,15 +58,33 @@ const DomeHero = () => {
             {domeData.description}
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4 mb-8 mx-auto">
-            <div className="flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
+            <div 
+              className="flex items-center px-4 py-2 rounded-full border border-white/20"
+              style={{
+                backgroundColor: 'rgb(40,20,40)',
+                backdropFilter: 'blur(10px)'
+              }}
+            >
               <Building className="h-5 w-5 text-teal-300 mr-2" />
               <span className="text-purple-100">Диаметр: {domeData.diameter}</span>
             </div>
-            <div className="flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
+            <div 
+              className="flex items-center px-4 py-2 rounded-full border border-white/20"
+              style={{
+                backgroundColor: 'rgb(40,20,40)',
+                backdropFilter: 'blur(10px)'
+              }}
+            >
               <Building className="h-5 w-5 text-teal-300 mr-2" />
               <span className="text-purple-100">Высота: {domeData.height}</span>
             </div>
-            <div className="flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
+            <div 
+              className="flex items-center px-4 py-2 rounded-full border border-white/20"
+              style={{
+                backgroundColor: 'rgb(40,20,40)',
+                backdropFilter: 'blur(10px)'
+              }}
+            >
               <Building className="h-5 w-5 text-teal-300 mr-2" />
               <span className="text-purple-100">Вместимость: {domeData.capacity}</span>
             </div>

@@ -9,7 +9,13 @@ const DomeSpecs = () => {
           Технические характеристики
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:bg-white/15 transition-all">
+          <div 
+            className="rounded-xl p-6 border border-white/20 hover:bg-[rgb(60,30,60)] transition-all duration-300"
+            style={{
+              backgroundColor: 'rgb(40,20,40)',
+              backdropFilter: 'blur(10px)'
+            }}
+          >
             <h3 className="text-xl font-semibold mb-3 text-teal-200">Размеры</h3>
             <ul className="space-y-2 text-purple-100">
               <li className="flex justify-between">
@@ -31,7 +37,13 @@ const DomeSpecs = () => {
             </ul>
           </div>
 
-          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:bg-white/15 transition-all">
+          <div 
+            className="rounded-xl p-6 border border-white/20 hover:bg-[rgb(60,30,60)] transition-all duration-300"
+            style={{
+              backgroundColor: 'rgb(40,20,40)',
+              backdropFilter: 'blur(10px)'
+            }}
+          >
             <h3 className="text-xl font-semibold mb-3 text-teal-200">Оборудование</h3>
             <ul className="space-y-2 text-purple-100">
               <li className="flex justify-between">
@@ -53,7 +65,13 @@ const DomeSpecs = () => {
             </ul>
           </div>
 
-          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:bg-white/15 transition-all">
+          <div 
+            className="rounded-xl p-6 border border-white/20 hover:bg-[rgb(60,30,60)] transition-all duration-300"
+            style={{
+              backgroundColor: 'rgb(40,20,40)',
+              backdropFilter: 'blur(10px)'
+            }}
+          >
             <h3 className="text-xl font-semibold mb-3 text-teal-200">Логистика</h3>
             <ul className="space-y-2 text-purple-100">
               <li className="flex justify-between">
