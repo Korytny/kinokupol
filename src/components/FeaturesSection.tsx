@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Building, Users, Calendar } from "lucide-react";
 
@@ -19,7 +18,7 @@ const FeaturesSection = () => {
               <Building className="h-6 w-6 text-[#80dfd5]" />
             </div>
             <h3 className="text-xl font-bold mb-2 text-[#80dfd5]">Мобильность и установка</h3>
-            <p className="text-blue-100">
+            <p className="text-purple-100">
               Быстрая установка в любом месте за 1-2 дня, возможность перемещения между локациями
             </p>
           </div>
@@ -29,7 +28,7 @@ const FeaturesSection = () => {
               <Users className="h-6 w-6 text-[#80dfd5]" />
             </div>
             <h3 className="text-xl font-bold mb-2 text-[#80dfd5]">Иммерсивный опыт</h3>
-            <p className="text-blue-100">
+            <p className="text-purple-100">
               Полное погружение зрителей благодаря 360° проекции и объемному звуку
             </p>
           </div>
@@ -39,7 +38,7 @@ const FeaturesSection = () => {
               <Calendar className="h-6 w-6 text-[#80dfd5]" />
             </div>
             <h3 className="text-xl font-bold mb-2 text-[#80dfd5]">Универсальность</h3>
-            <p className="text-blue-100">
+            <p className="text-purple-100">
               Подходит для широкого спектра мероприятий, от развлекательных до образовательных
             </p>
           </div>

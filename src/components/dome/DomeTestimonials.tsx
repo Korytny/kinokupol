@@ -1,4 +1,3 @@
-
 import React from "react";
 
 const DomeTestimonials = () => {
@@ -27,12 +26,12 @@ const DomeTestimonials = () => {
   ];
 
   return (
-    <section className="py-16 bg-gradient-to-r from-slate-900 to-blue-900">
+    <section className="section section-dark">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-teal-200">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-teal-200">
           Отзывы клиентов
         </h2>
-        <p className="text-center text-blue-100 mb-12 max-w-3xl mx-auto">
+        <p className="text-center text-purple-100 mb-12 max-w-3xl mx-auto">
           Узнайте, что говорят о нашем куполе L клиенты, которые уже организовали свои мероприятия
         </p>
 
@@ -54,11 +53,11 @@ const DomeTestimonials = () => {
                   </svg>
                 ))}
               </div>
-              <blockquote className="mb-4 text-blue-100 italic">
+              <blockquote className="mb-4 text-purple-100 italic">
                 "{testimonial.content}"
               </blockquote>
               <div className="font-medium text-teal-200">{testimonial.author}</div>
-              <div className="text-sm text-blue-200">{testimonial.role}</div>
+              <div className="text-sm text-purple-200">{testimonial.role}</div>
             </div>
           ))}
         </div>

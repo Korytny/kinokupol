@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -39,13 +38,13 @@ const DomeUseCases = () => {
   ];
 
   return (
-    <section className="py-16 bg-gradient-to-r from-slate-900 to-blue-900 text-white overflow-hidden">
+    <section className="section section-dark">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-teal-200">
+          <h2 className="text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-teal-200">
             Варианты использования
           </h2>
-          <p className="text-blue-200 max-w-2xl mx-auto">
+          <p className="text-purple-200 max-w-2xl mx-auto">
             Купол L идеально подходит для различных целей благодаря своей вместительности,
             продуманной акустике и качественному проекционному оборудованию.
           </p>
@@ -69,10 +68,10 @@ const DomeUseCases = () => {
                     {category.icon}
                     <CardTitle className="text-white">{category.title}</CardTitle>
                   </div>
-                  <CardDescription className="text-blue-200">{category.description}</CardDescription>
+                  <CardDescription className="text-purple-200">{category.description}</CardDescription>
                 </CardHeader>
                 <CardFooter>
-                  <Button className="w-full bg-gradient-to-r from-teal-400 to-blue-500 hover:from-teal-500 hover:to-blue-600 text-white">
+                  <Button className="w-full bg-gradient-to-r from-teal-400 to-purple-500 hover:from-teal-500 hover:to-purple-600 text-white">
                     Узнать больше <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </CardFooter>

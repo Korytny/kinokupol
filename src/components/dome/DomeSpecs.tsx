@@ -1,18 +1,17 @@
-
 import React from "react";
 import { ArrowRight } from "lucide-react";
 
 const DomeSpecs = () => {
   return (
-    <section className="py-16 bg-gradient-to-r from-slate-900 to-blue-900">
+    <section className="section section-dark">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-teal-200">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-teal-200">
           Технические характеристики
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:bg-white/15 transition-all">
             <h3 className="text-xl font-semibold mb-3 text-teal-200">Размеры</h3>
-            <ul className="space-y-2 text-blue-100">
+            <ul className="space-y-2 text-purple-100">
               <li className="flex justify-between">
                 <span>Диаметр:</span>
                 <span className="font-medium">15 метров</span>
@@ -34,7 +33,7 @@ const DomeSpecs = () => {
 
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:bg-white/15 transition-all">
             <h3 className="text-xl font-semibold mb-3 text-teal-200">Оборудование</h3>
-            <ul className="space-y-2 text-blue-100">
+            <ul className="space-y-2 text-purple-100">
               <li className="flex justify-between">
                 <span>Проекторы:</span>
                 <span className="font-medium">6 x 4K</span>
@@ -56,7 +55,7 @@ const DomeSpecs = () => {
 
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:bg-white/15 transition-all">
             <h3 className="text-xl font-semibold mb-3 text-teal-200">Логистика</h3>
-            <ul className="space-y-2 text-blue-100">
+            <ul className="space-y-2 text-purple-100">
               <li className="flex justify-between">
                 <span>Время монтажа:</span>
                 <span className="font-medium">8 часов</span>

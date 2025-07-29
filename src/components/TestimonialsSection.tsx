@@ -28,12 +28,12 @@ const testimonials: TestimonialType[] = [
 
 const TestimonialsSection: React.FC = () => {
   return (
-    <section className="py-16 bg-gradient-to-r from-slate-900 to-blue-900 text-white overflow-hidden">
+    <section className="section section-dark">
       <div className="container mx-auto px-4">
         <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20">
           <div className="text-center mb-10">
             <h3 className="text-2xl font-bold mb-2 text-white">Что говорят наши клиенты</h3>
-            <p className="text-blue-200">Отзывы ведущих компаний, использовавших купольные решения</p>
+            <p className="text-purple-200">Отзывы ведущих компаний, использовавших купольные решения</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -45,10 +45,10 @@ const TestimonialsSection: React.FC = () => {
                   </div>
                   <div>
                     <div className="font-medium text-white">{testimonial.company}</div>
-                    <div className="text-sm text-blue-300">{testimonial.position}</div>
+                    <div className="text-sm text-purple-300">{testimonial.position}</div>
                   </div>
                 </div>
-                <p className="italic text-blue-100 mb-4">"{testimonial.text}"</p>
+                <p className="italic text-purple-100 mb-4">"{testimonial.text}"</p>
                 <div className="text-sm font-medium text-white">— {testimonial.author}</div>
               </div>
             ))}

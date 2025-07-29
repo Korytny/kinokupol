@@ -8,7 +8,7 @@
 
 @layer base {
   :root {
-    --background: 220 58% 20%; /* New dark blue background (#15254f) */
+    --background: 275 60% 10%; /* New dark purple background (#1c0936) */
     --foreground: 0 0% 100%; /* White text for contrast */
 
     --card: 0 0% 100%;
@@ -124,7 +124,7 @@
   }
   
   .gradient-secondary {
-    @apply bg-gradient-to-br from-purple-100 to-blue-50;
+    @apply bg-gradient-to-br from-purple-100 to-purple-50;
   }
   
   .gradient-purple {
@@ -141,7 +141,7 @@
   }
   
   .section-dark {
-    @apply bg-gradient-to-r from-slate-900 to-blue-900 text-white;
+    @apply bg-gradient-to-r from-kinokupol-brand-dark-purple to-kinokupol-brand-very-dark-purple text-white;
   }
   
   .section-light {
@@ -166,7 +166,7 @@
   
   .glow-border::before {
     content: "";
-    @apply absolute -inset-0.5 bg-gradient-to-r from-teal-400 to-blue-500 rounded-xl blur opacity-50;
+    @apply absolute -inset-0.5 bg-gradient-to-r from-teal-400 to-purple-500 rounded-xl blur opacity-50;
   }
   
   .heading-icon {
@@ -174,7 +174,7 @@
   }
   
   .btn-primary {
-    @apply bg-gradient-to-r from-teal-400 to-blue-500 border-0 hover:from-teal-500 hover:to-blue-600 text-white;
+    @apply bg-gradient-to-r from-teal-400 to-purple-500 border-0 hover:from-teal-500 hover:to-purple-600 text-white;
   }
   
   .btn-outline {

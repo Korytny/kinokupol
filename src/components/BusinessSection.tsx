@@ -1,28 +1,27 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Briefcase, ChartBar, DollarSign } from "lucide-react";
 
 const BusinessSection: React.FC = () => {
   return (
-    <section className="py-16 bg-gradient-to-r from-slate-900 to-blue-900 text-white overflow-hidden">
+    <section className="section section-dark">
       <div className="container mx-auto px-4 relative">
         {/* Decorative elements */}
-        <div className="absolute top-20 left-10 w-20 h-20 rounded-full bg-blue-500 opacity-20 blur-xl"></div>
+        <div className="absolute top-20 left-10 w-20 h-20 rounded-full bg-purple-500 opacity-20 blur-xl"></div>
         <div className="absolute bottom-40 right-20 w-32 h-32 rounded-full bg-teal-300 opacity-10 blur-xl"></div>
         <div className="flex flex-col lg:flex-row gap-16 items-center mb-16">
           <div className="lg:w-1/2">
             <div className="inline-block mb-4 py-1 px-3 bg-teal-400/20 text-teal-200 rounded-full text-sm font-medium">
               Бренды и бизнес
             </div>
-            <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-teal-200 leading-tight">
+            <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-teal-200 leading-tight">
               Создайте незабываемые впечатления для ваших бизнес-мероприятий
             </h2>
-            <p className="text-xl text-blue-100 mb-8">
+            <p className="text-xl text-purple-100 mb-8">
               Купольные пространства создают уникальную атмосферу для запуска продуктов, корпоративных мероприятий и презентаций бренда, оставляя неизгладимое впечатление у ваших клиентов и партнеров.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button className="bg-gradient-to-r from-teal-400 to-blue-500 hover:from-teal-500 hover:to-blue-600 text-white px-6">
+              <Button className="bg-gradient-to-r from-teal-400 to-purple-500 hover:from-teal-500 hover:to-purple-600 text-white px-6">
                 Запросить предложение
               </Button>
               <Button variant="outline" className="border-white/30 text-white hover:bg-white/10">
@@ -32,13 +31,13 @@ const BusinessSection: React.FC = () => {
           </div>
           <div className="lg:w-1/2">
             <div className="relative">
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-teal-400 to-blue-500 rounded-lg blur opacity-30"></div>
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-teal-400 to-purple-500 rounded-lg blur opacity-30"></div>
               <div className="relative bg-white/10 backdrop-blur-sm rounded-lg overflow-hidden border border-white/20">
-                <div className="p-1 bg-gradient-to-r from-teal-400 to-blue-500"></div>
+                <div className="p-1 bg-gradient-to-r from-teal-400 to-purple-500"></div>
                 <div className="p-8">
                   <div className="flex justify-between items-start mb-6">
                     <div className="space-y-2">
-                      <div className="text-sm text-blue-300">Средний ROI мероприятий</div>
+                      <div className="text-sm text-purple-300">Средний ROI мероприятий</div>
                       <div className="text-3xl font-bold text-white">320%</div>
                     </div>
                     <ChartBar className="h-12 w-12 text-teal-300" />
@@ -71,7 +70,7 @@ const BusinessSection: React.FC = () => {
                             <div className="font-medium text-white">{item.metric}</div>
                             <div className="text-teal-300 font-semibold">{item.value}</div>
                           </div>
-                          <div className="text-sm text-blue-200">{item.description}</div>
+                          <div className="text-sm text-purple-200">{item.description}</div>
                         </div>
                       </div>
                     ))}
@@ -108,10 +107,10 @@ const BusinessSection: React.FC = () => {
                 {card.icon}
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">{card.title}</h3>
-              <p className="text-blue-100 mb-6">{card.description}</p>
+              <p className="text-purple-100 mb-6">{card.description}</p>
               <ul className="space-y-2">
                 {card.features.map((feature, i) => (
-                  <li key={i} className="flex items-center text-blue-200">
+                  <li key={i} className="flex items-center text-purple-200">
                     <svg className="h-5 w-5 text-teal-300 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>

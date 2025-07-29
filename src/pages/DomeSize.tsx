@@ -18,7 +18,7 @@ const DomeSize = () => {
   }, [size]);
   
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-r from-slate-900 to-blue-900 text-white">
+    <div className="min-h-screen flex flex-col bg-gradient-to-r from-kinokupol-brand-dark-purple to-kinokupol-brand-very-dark-purple text-white">
       <Navbar />
       <main className="flex-grow">
         <DomeHero />

@@ -1,4 +1,3 @@
-
 import React from "react";
 import { useParams } from "react-router-dom";
 import { Building } from "lucide-react";
@@ -42,31 +41,31 @@ const DomeHero = () => {
   const domeData = domeSizesData[domeSize as keyof typeof domeSizesData] || domeSizesData.l;
 
   return (
-    <section className="relative h-[600px] overflow-hidden bg-gradient-to-r from-slate-900 to-blue-900">
+    <section className="relative h-[600px] overflow-hidden section-dark">
       <div className="container mx-auto px-4 h-full flex flex-col justify-center">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-teal-200">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-teal-200">
             {domeData.name}
           </h1>
-          <p className="text-xl text-blue-100 mb-6">
+          <p className="text-xl text-purple-100 mb-6">
             {domeData.description}
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4 mb-8 mx-auto">
             <div className="flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
               <Building className="h-5 w-5 text-teal-300 mr-2" />
-              <span className="text-blue-100">Диаметр: {domeData.diameter}</span>
+              <span className="text-purple-100">Диаметр: {domeData.diameter}</span>
             </div>
             <div className="flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
               <Building className="h-5 w-5 text-teal-300 mr-2" />
-              <span className="text-blue-100">Высота: {domeData.height}</span>
+              <span className="text-purple-100">Высота: {domeData.height}</span>
             </div>
             <div className="flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
               <Building className="h-5 w-5 text-teal-300 mr-2" />
-              <span className="text-blue-100">Вместимость: {domeData.capacity}</span>
+              <span className="text-purple-100">Вместимость: {domeData.capacity}</span>
             </div>
           </div>
-          <Button className="bg-gradient-to-r from-teal-400 to-blue-500 hover:from-teal-500 hover:to-blue-600 text-white mx-auto">
+          <Button className="bg-gradient-to-r from-teal-400 to-purple-500 hover:from-teal-500 hover:to-purple-600 text-white mx-auto">
             Забронировать купол
           </Button>
         </div>

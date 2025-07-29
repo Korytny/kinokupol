@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -63,7 +62,7 @@ const Navbar: React.FC = () => {
             <Phone className="h-5 w-5 mr-2" />
             8 (800) 123-45-67
           </a>
-          <Button className="bg-gradient-to-r from-teal-400 to-blue-500 hover:from-teal-500 hover:to-blue-600">
+          <Button className="bg-gradient-to-r from-teal-400 to-purple-500 hover:from-teal-500 hover:to-purple-600">
             Заказать
           </Button>
           <Button variant="outline" size="icon" className="md:hidden rounded-full border-white/30 text-white hover:bg-white/10">

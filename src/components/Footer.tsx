@@ -1,11 +1,10 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin } from "lucide-react";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gradient-to-r from-slate-900 to-blue-900 py-12 text-white">
+    <footer className="section-dark py-12 text-white">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Column 1 - About */}
@@ -15,7 +14,7 @@ const Footer: React.FC = () => {
                 КиноКупол
               </div>
             </Link>
-            <p className="text-blue-200 mb-4">
+            <p className="text-purple-200 mb-4">
               Создаем незабываемые впечатления с помощью современных купольных технологий 
               для развлечений, образования и бизнеса.
             </p>
@@ -26,22 +25,22 @@ const Footer: React.FC = () => {
             <h3 className="font-bold text-lg mb-4 text-white">Размеры куполов</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/dome/s" className="text-blue-200 hover:text-teal-300 transition-colors">
+                <Link to="/dome/s" className="text-purple-200 hover:text-teal-300 transition-colors">
                   Купол S
                 </Link>
               </li>
               <li>
-                <Link to="/dome/m" className="text-blue-200 hover:text-teal-300 transition-colors">
+                <Link to="/dome/m" className="text-purple-200 hover:text-teal-300 transition-colors">
                   Купол M
                 </Link>
               </li>
               <li>
-                <Link to="/dome/l" className="text-blue-200 hover:text-teal-300 transition-colors">
+                <Link to="/dome/l" className="text-purple-200 hover:text-teal-300 transition-colors">
                   Купол L
                 </Link>
               </li>
               <li>
-                <Link to="/dome/xl" className="text-blue-200 hover:text-teal-300 transition-colors">
+                <Link to="/dome/xl" className="text-purple-200 hover:text-teal-300 transition-colors">
                   Купол XL
                 </Link>
               </li>
@@ -53,27 +52,27 @@ const Footer: React.FC = () => {
             <h3 className="font-bold text-lg mb-4 text-white">Категории</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-blue-200 hover:text-teal-300 transition-colors">
+                <a href="#" className="text-purple-200 hover:text-teal-300 transition-colors">
                   Мероприятия
                 </a>
               </li>
               <li>
-                <a href="#" className="text-blue-200 hover:text-teal-300 transition-colors">
+                <a href="#" className="text-purple-200 hover:text-teal-300 transition-colors">
                   Наука
                 </a>
               </li>
               <li>
-                <a href="#" className="text-blue-200 hover:text-teal-300 transition-colors">
+                <a href="#" className="text-purple-200 hover:text-teal-300 transition-colors">
                   Развлечения
                 </a>
               </li>
               <li>
-                <a href="#" className="text-blue-200 hover:text-teal-300 transition-colors">
+                <a href="#" className="text-purple-200 hover:text-teal-300 transition-colors">
                   Культура
                 </a>
               </li>
               <li>
-                <a href="#" className="text-blue-200 hover:text-teal-300 transition-colors">
+                <a href="#" className="text-purple-200 hover:text-teal-300 transition-colors">
                   Бизнес
                 </a>
               </li>
@@ -84,15 +83,15 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="font-bold text-lg mb-4 text-white">Контакты</h3>
             <ul className="space-y-3">
-              <li className="flex items-center gap-2 text-blue-200">
+              <li className="flex items-center gap-2 text-purple-200">
                 <Mail className="h-5 w-5 text-teal-300" />
                 <span>info@kinokupol.ru</span>
               </li>
-              <li className="flex items-center gap-2 text-blue-200">
+              <li className="flex items-center gap-2 text-purple-200">
                 <Phone className="h-5 w-5 text-teal-300" />
                 <span>8 (800) 123-45-67</span>
               </li>
-              <li className="flex items-center gap-2 text-blue-200">
+              <li className="flex items-center gap-2 text-purple-200">
                 <MapPin className="h-5 w-5 text-teal-300" />
                 <span>г. Москва, ул. Примерная, д. 123</span>
               </li>
@@ -102,10 +101,10 @@ const Footer: React.FC = () => {
 
         <div className="border-t border-white/20 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
-            <p className="text-sm text-blue-200">© 2023 КиноКупол. Все права защищены.</p>
+            <p className="text-sm text-purple-200">© 2023 КиноКупол. Все права защищены.</p>
           </div>
           <div className="flex items-center gap-4">
-            <a href="#" className="text-blue-200 hover:text-teal-300 transition-colors">
+            <a href="#" className="text-purple-200 hover:text-teal-300 transition-colors">
               <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
               </svg>

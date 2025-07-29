@@ -77,6 +77,8 @@ export default {
 					light: "#D6BCFA", // Light purple
 					"soft-purple": "#E5DEFF", // Soft purple
 					"soft-blue": "#D3E4FD", // Soft blue
+					"brand-dark-purple": "#2a0e4f",
+					"brand-very-dark-purple": "#1c0936",
 				},
 				// Science section-inspired colors
 				science: {
@@ -113,9 +115,9 @@ export default {
 			},
 			backgroundImage: {
 				'main-gradient': 'linear-gradient(135deg, #9b87f5 0%, #D6BCFA 100%)',
-				'secondary-gradient': 'linear-gradient(135deg, #E5DEFF 0%, #D3E4FD 100%)',
-				'science-gradient': 'linear-gradient(to right, #243949 0%, #517fa4 100%)',
-				'glow-gradient': 'linear-gradient(to right, #80dfd5 0%, #4ea8de 100%)',
+				'secondary-gradient': 'linear-gradient(135deg, #E5DEFF 0%, #D6BCFA 100%)',
+				'science-gradient': 'linear-gradient(to right, #2a0e4f 0%, #1c0936 100%)',
+				'glow-gradient': 'linear-gradient(to right, #80dfd5 0%, #9b87f5 100%)',
 			}
 		}
 	},

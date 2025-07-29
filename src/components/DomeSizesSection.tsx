@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -47,13 +46,13 @@ const domeSizes = [
 
 const DomeSizesSection = () => {
   return (
-    <section className="py-16 bg-gradient-to-r from-slate-900 to-blue-900 text-white overflow-hidden">
+    <section className="section section-dark">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-teal-200">
+          <h2 className="text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-teal-200">
             Размеры куполов
           </h2>
-          <p className="text-blue-200 max-w-2xl mx-auto">
+          <p className="text-purple-200 max-w-2xl mx-auto">
             Выберите идеальный размер купола для вашего мероприятия, от компактного для небольших групп
             до впечатляющего XL-купола для масштабных событий
           </p>
@@ -71,26 +70,26 @@ const DomeSizesSection = () => {
                       className="object-cover w-full h-full"
                     />
                   </AspectRatio>
-                  <div className="absolute top-2 right-2 bg-gradient-to-r from-teal-400 to-blue-500 text-white px-3 py-1 rounded-full text-sm">
+                  <div className="absolute top-2 right-2 bg-gradient-to-r from-teal-400 to-purple-500 text-white px-3 py-1 rounded-full text-sm">
                     {dome.id.toUpperCase()}
                   </div>
                 </div>
                 <CardHeader>
                   <CardTitle className="text-white">{dome.name}</CardTitle>
-                  <CardDescription className="text-blue-200">{dome.description}</CardDescription>
+                  <CardDescription className="text-purple-200">{dome.description}</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="flex items-center gap-2 mb-2">
                     <Users className="h-4 w-4 text-teal-300" />
-                    <span className="text-sm text-blue-100">{dome.capacity}</span>
+                    <span className="text-sm text-purple-100">{dome.capacity}</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Building className="h-4 w-4 text-teal-300" />
-                    <span className="text-sm text-blue-100">Диаметр: {dome.diameter}, Высота: {dome.height}</span>
+                    <span className="text-sm text-purple-100">Диаметр: {dome.diameter}, Высота: {dome.height}</span>
                   </div>
                 </CardContent>
                 <CardFooter>
-                  <Button className="w-full bg-gradient-to-r from-teal-400 to-blue-500 hover:from-teal-500 hover:to-blue-600 text-white">
+                  <Button className="w-full bg-gradient-to-r from-teal-400 to-purple-500 hover:from-teal-500 hover:to-purple-600 text-white">
                     Подробнее <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </CardFooter>

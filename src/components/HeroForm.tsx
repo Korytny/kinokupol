@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -27,8 +26,8 @@ const HeroForm = () => {
       <div className="relative container mx-auto px-4 h-full flex flex-col justify-start pt-20 items-center text-center text-white [text-shadow:_0_1px_3px_rgba(0,0,0,0.8)]">
         <h1 className="text-5xl md:text-7xl font-bold mb-4 animate-fade-in text-white/90 relative">
           <span className="relative inline-block">
-            <span className="absolute inset-0 bg-gradient-to-r from-blue-400/30 to-teal-400/30 rounded-full blur-md opacity-80"></span>
-            <span className="relative z-10 [text-shadow:_0_0_10px_rgba(147,197,253,0.7)]">
+            <span className="absolute inset-0 bg-gradient-to-r from-purple-400/30 to-teal-400/30 rounded-full blur-md opacity-80"></span>
+            <span className="relative z-10 [text-shadow:_0_0_10px_rgba(200,160,255,0.7)]">
               КиноКупол
             </span>
           </span>

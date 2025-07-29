@@ -36,7 +36,7 @@ const HowItWorksSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-16 bg-gradient-to-r from-slate-900 to-blue-900 text-white overflow-hidden">
+    <section className="section section-dark">
       <div className="container mx-auto px-4">
         <h3 className="text-2xl font-bold text-center mb-8 text-teal-200">Как это работает</h3>
         <div className="relative">
@@ -51,7 +51,7 @@ const HowItWorksSection: React.FC = () => {
                   {item.position === 'left' && (
                     <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20">
                       <h4 className="text-xl font-bold mb-2 text-teal-200">{item.title}</h4>
-                      <p className="text-blue-100">{item.description}</p>
+                      <p className="text-purple-100">{item.description}</p>
                     </div>
                   )}
                 </div>
@@ -64,7 +64,7 @@ const HowItWorksSection: React.FC = () => {
                   {item.position === 'right' && (
                     <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-white/20">
                       <h4 className="text-xl font-bold mb-2 text-teal-200">{item.title}</h4>
-                      <p className="text-blue-100">{item.description}</p>
+                      <p className="text-purple-100">{item.description}</p>
                     </div>
                   )}
                 </div>

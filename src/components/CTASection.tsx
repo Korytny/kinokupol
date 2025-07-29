@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 
@@ -15,7 +14,7 @@ const CTASection = () => {
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
-            <Button className="bg-gradient-to-r from-teal-400 to-blue-500 border-0 hover:from-teal-500 hover:to-blue-600 text-white text-lg py-6">
+            <Button className="bg-gradient-to-r from-teal-400 to-purple-500 border-0 hover:from-teal-500 hover:to-purple-600 text-white text-lg py-6">
               Забронировать купол
             </Button>
             <Button variant="outline" className="border-[#80dfd5] text-[#80dfd5] hover:bg-[#80dfd5]/10 text-lg py-6">

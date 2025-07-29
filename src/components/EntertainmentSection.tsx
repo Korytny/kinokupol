@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Gamepad, PartyPopper, Theater } from "lucide-react";
@@ -34,10 +33,10 @@ const entertainmentOptions: EntertainmentOption[] = [
 
 const EntertainmentSection: React.FC = () => {
   return (
-    <section className="py-16 bg-gradient-to-r from-slate-900 to-blue-900 text-white overflow-hidden">
+    <section className="section section-dark">
       <div className="container mx-auto px-4 relative">
         {/* Decorative elements */}
-        <div className="absolute top-20 left-10 w-20 h-20 rounded-full bg-blue-500 opacity-20 blur-xl"></div>
+        <div className="absolute top-20 left-10 w-20 h-20 rounded-full bg-purple-500 opacity-20 blur-xl"></div>
         <div className="absolute bottom-40 right-20 w-32 h-32 rounded-full bg-teal-300 opacity-10 blur-xl"></div>
         
         {/* Wave design at the top */}
@@ -53,17 +52,17 @@ const EntertainmentSection: React.FC = () => {
         </div>
         
         <div className="text-center mb-12">
-          <h2 className="text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-teal-200">
+          <h2 className="text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-teal-200">
             Развлечения под куполом
           </h2>
-          <p className="text-xl text-blue-100 max-w-2xl mx-auto">
+          <p className="text-xl text-purple-100 max-w-2xl mx-auto">
             Удивите ваших посетителей незабываемыми развлекательными программами в атмосфере полного погружения
           </p>
         </div>
         
         <div className="flex flex-col md:flex-row gap-8 mb-16">
           <div className="md:w-1/2 relative">
-            <div className="absolute -inset-0.5 bg-gradient-to-r from-teal-400 to-blue-500 rounded-2xl blur opacity-50"></div>
+            <div className="absolute -inset-0.5 bg-gradient-to-r from-teal-400 to-purple-500 rounded-2xl blur opacity-50"></div>
             <img 
               src="/img/post2.jpg" 
               alt="Развлекательные программы под куполом КиноКупол" 
@@ -73,11 +72,11 @@ const EntertainmentSection: React.FC = () => {
             />
             <div className="absolute -bottom-5 -right-5 bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/20 transform rotate-3 w-40 md:w-64">
               <div className="text-2xl font-bold text-teal-300">98%</div>
-              <div className="text-sm text-blue-100">посетителей рекомендуют купольные развлечения друзьям</div>
+              <div className="text-sm text-purple-100">посетителей рекомендуют купольные развлечения друзьям</div>
             </div>
             <div className="absolute -top-5 -left-5 bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/20 transform -rotate-3 w-40 md:w-64">
-              <div className="text-2xl font-bold text-blue-300">+38%</div>
-              <div className="text-sm text-blue-100">рост посещаемости развлекательных центров</div>
+              <div className="text-2xl font-bold text-purple-300">+38%</div>
+              <div className="text-sm text-purple-100">рост посещаемости развлекательных центров</div>
             </div>
           </div>
           
@@ -95,15 +94,15 @@ const EntertainmentSection: React.FC = () => {
                       {option.icon}
                     </div>
                     <div>
-                      <h4 className="text-xl font-semibold mb-2 text-blue-100">{option.title}</h4>
-                      <p className="text-blue-200">{option.description}</p>
+                      <h4 className="text-xl font-semibold mb-2 text-purple-100">{option.title}</h4>
+                      <p className="text-purple-200">{option.description}</p>
                     </div>
                   </div>
                 ))}
               </div>
               
               <div className="mt-8">
-                <Button className="bg-gradient-to-r from-teal-400 to-blue-500 hover:from-teal-500 hover:to-blue-600 text-white w-full py-6 rounded-xl border-0">
+                <Button className="bg-gradient-to-r from-teal-400 to-purple-500 hover:from-teal-500 hover:to-purple-600 text-white w-full py-6 rounded-xl border-0">
                   <PartyPopper className="mr-2 h-5 w-5" />
                   Забронировать развлекательную программу
                 </Button>
