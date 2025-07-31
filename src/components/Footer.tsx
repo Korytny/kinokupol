@@ -85,7 +85,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-3">
               <li className="flex items-center gap-2 text-purple-200">
                 <Mail className="h-5 w-5 text-teal-300" />
-                <span>info@kinosfera.ru</span>
+                <span>info@kinosfera.pro</span>
               </li>
               <li className="flex items-center gap-2 text-purple-200">
                 <Phone className="h-5 w-5 text-teal-300" />
@@ -93,7 +93,7 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-center gap-2 text-purple-200">
                 <MapPin className="h-5 w-5 text-teal-300" />
-                <span>г. Москва, ул. Примерная, д. 123</span>
+                <span>Большой Кисельный пер., 7, стр. 2, Москва</span>
               </li>
             </ul>
           </div>
