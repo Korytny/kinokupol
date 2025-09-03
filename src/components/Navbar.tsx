@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Search, Phone } from "lucide-react";
+import { Search, Phone, X, Menu } from "lucide-react";
 
 const Navbar: React.FC = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <nav 
       className="sticky top-0 z-50 border-b border-white/20"
@@ -58,6 +68,12 @@ const Navbar: React.FC = () => {
               </div>
             </div>
           </div>
+          <button 
+            onClick={() => scrollToSection('video')}
+            className="text-white hover:text-teal-300 transition-colors cursor-pointer"
+          >
+            Видео
+          </button>
           <a href="#" className="text-white hover:text-teal-300 transition-colors">О нас</a>
           <a href="#" className="text-white hover:text-teal-300 transition-colors">Контакты</a>
         </div>
@@ -71,13 +87,91 @@ const Navbar: React.FC = () => {
           <Button className="bg-gradient-to-r from-teal-400 to-purple-500 hover:from-teal-500 hover:to-purple-600">
             Заказать
           </Button>
-          <Button variant="outline" size="icon" className="md:hidden rounded-full border-white/30 text-white hover:bg-white/10">
-            <svg width="24" height="24" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1.5 3C1.22386 3 1 3.22386 1 3.5C1 3.77614 1.22386 4 1.5 4H13.5C13.7761 4 14 3.77614 14 3.5C14 3.22386 13.7761 3 13.5 3H1.5ZM1.5 7C1.22386 7 1 7.22386 1 7.5C1 7.77614 1.22386 8 1.5 8H13.5C13.7761 8 14 7.77614 14 7.5C14 7.22386 13.7761 7 13.5 7H1.5ZM1 11.5C1 11.2239 1.22386 11 1.5 11H13.5C13.7761 11 14 11.2239 14 11.5C14 11.7761 13.7761 12 13.5 12H1.5C1.22386 12 1 11.7761 1 11.5Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
-            </svg>
+          <Button 
+            variant="outline" 
+            size="icon" 
+            className="md:hidden rounded-full border-white/30 text-white hover:bg-white/10"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </Button>
         </div>
       </div>
+
+      {/* Mobile Menu */}
+      {isMobileMenuOpen && (
+        <div className="md:hidden absolute top-full left-0 right-0 bg-slate-900/95 backdrop-blur-sm border-t border-white/20">
+          <div className="container mx-auto px-4 py-4">
+            <div className="space-y-3">
+              <button
+                onClick={() => scrollToSection('hero')}
+                className="block w-full text-left text-white hover:text-teal-300 py-2 transition-colors"
+              >
+                Главная
+              </button>
+              
+              <button
+                onClick={() => scrollToSection('features')}
+                className="block w-full text-left text-white hover:text-teal-300 py-2 transition-colors"
+              >
+                Преимущества
+              </button>
+              
+              <button
+                onClick={() => scrollToSection('video')}
+                className="block w-full text-left text-white hover:text-teal-300 py-2 transition-colors"
+              >
+                Видео
+              </button>
+              
+              <button
+                onClick={() => scrollToSection('testimonials')}
+                className="block w-full text-left text-white hover:text-teal-300 py-2 transition-colors"
+              >
+                Отзывы
+              </button>
+              
+              <button
+                onClick={() => scrollToSection('dome-sizes')}
+                className="block w-full text-left text-white hover:text-teal-300 py-2 transition-colors"
+              >
+                Размеры куполов
+              </button>
+              
+              <button
+                onClick={() => scrollToSection('how-it-works')}
+                className="block w-full text-left text-white hover:text-teal-300 py-2 transition-colors"
+              >
+                Как это работает
+              </button>
+              
+              <button
+                onClick={() => scrollToSection('categories')}
+                className="block w-full text-left text-white hover:text-teal-300 py-2 transition-colors"
+              >
+                Категории
+              </button>
+              
+              <button
+                onClick={() => scrollToSection('contact')}
+                className="block w-full text-left text-white hover:text-teal-300 py-2 transition-colors"
+              >
+                Контакты
+              </button>
+            </div>
+            
+            <div className="mt-6 pt-4 border-t border-white/20">
+              <a 
+                href="tel:+78001234567" 
+                className="flex items-center text-teal-300 font-medium"
+              >
+                <Phone className="h-5 w-5 mr-2" />
+                8 (800) 123-45-67
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
     </nav>
   );
 };

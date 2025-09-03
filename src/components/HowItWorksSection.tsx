@@ -36,7 +36,7 @@ const HowItWorksSection: React.FC = () => {
   ];
 
   return (
-    <section className="section section-dark">
+    <section id="how-it-works" className="section section-dark">
       <div className="container mx-auto px-4">
         <h3 className="text-5xl font-bold text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-teal-200">
           Как это работает

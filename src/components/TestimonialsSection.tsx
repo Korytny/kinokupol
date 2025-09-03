@@ -28,7 +28,7 @@ const testimonials: TestimonialType[] = [
 
 const TestimonialsSection: React.FC = () => {
   return (
-    <section className="section section-dark">
+    <section id="testimonials" className="section section-dark">
       <div className="container mx-auto px-4">
         <div 
           className="rounded-xl p-8 border border-white/20"

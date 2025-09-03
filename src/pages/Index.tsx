@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import HeroForm from "@/components/HeroForm";
 import DomeSizesSection from "@/components/DomeSizesSection";
 import FeaturesSection from "@/components/FeaturesSection";
+import VideoSection from "@/components/VideoSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import CTASection from "@/components/CTASection";
 import EventsSection from "@/components/EventsSection";
@@ -26,6 +27,7 @@ const Index: React.FC = () => {
         <BusinessSection />
         <DomeSizesSection />
         <FeaturesSection />
+        <VideoSection />
         <TestimonialsSection />
         <CTASection />
       </div>

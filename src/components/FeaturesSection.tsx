@@ -3,7 +3,7 @@ import { Building, Users, Calendar } from "lucide-react";
 
 const FeaturesSection = () => {
   return (
-    <section className="section section-dark">
+    <section id="features" className="section section-dark">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="section-title">Преимущества куполов КиноКупол</h2>

@@ -46,7 +46,7 @@ const domeSizes = [
 
 const DomeSizesSection = () => {
   return (
-    <section className="section section-dark">
+    <section id="dome-sizes" className="section section-dark">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-teal-200">
