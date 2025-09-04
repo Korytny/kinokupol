@@ -16,7 +16,7 @@ const FeaturesSection = () => {
           <div 
             className="rounded-xl p-6 border border-white/20 hover:bg-[rgb(60,30,60)] transition-all duration-300"
             style={{
-              backgroundColor: 'rgb(40,20,40)',
+              backgroundColor: 'rgb(60,40,70)',
               backdropFilter: 'blur(10px)'
             }}
           >
@@ -32,7 +32,7 @@ const FeaturesSection = () => {
           <div 
             className="rounded-xl p-6 border border-white/20 hover:bg-[rgb(60,30,60)] transition-all duration-300"
             style={{
-              backgroundColor: 'rgb(40,20,40)',
+              backgroundColor: 'rgb(60,40,70)',
               backdropFilter: 'blur(10px)'
             }}
           >
@@ -48,7 +48,7 @@ const FeaturesSection = () => {
           <div 
             className="rounded-xl p-6 border border-white/20 hover:bg-[rgb(60,30,60)] transition-all duration-300"
             style={{
-              backgroundColor: 'rgb(40,20,40)',
+              backgroundColor: 'rgb(60,40,70)',
               backdropFilter: 'blur(10px)'
             }}
           >

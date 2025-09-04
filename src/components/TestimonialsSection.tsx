@@ -33,7 +33,7 @@ const TestimonialsSection: React.FC = () => {
         <div 
           className="rounded-xl p-8 border border-white/20"
           style={{
-            backgroundColor: 'rgb(30,15,30)',
+            backgroundColor: 'rgb(50,30,60)',
             backdropFilter: 'blur(10px)'
           }}
         >
@@ -48,7 +48,7 @@ const TestimonialsSection: React.FC = () => {
                 key={index} 
                 className="p-6 rounded-lg border border-white/20 hover:bg-[rgb(60,30,60)] transition-all duration-300"
                 style={{
-                  backgroundColor: 'rgb(40,20,40)',
+                  backgroundColor: 'rgb(60,40,70)',
                   backdropFilter: 'blur(10px)'
                 }}
               >

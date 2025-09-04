@@ -18,7 +18,7 @@ const Navbar: React.FC = () => {
     <nav 
       className="sticky top-0 z-50 border-b border-white/20"
       style={{
-        backgroundColor: 'rgb(40,20,40)',
+        backgroundColor: 'rgb(50,30,60)',
         backdropFilter: 'blur(10px)'
       }}
     >

@@ -64,7 +64,7 @@ const DomeSizesSection = () => {
               <Card 
                 className="h-full hover-scale overflow-hidden border border-white/20 transition-all duration-300"
                 style={{
-                  backgroundColor: 'rgb(40,20,40)',
+                  backgroundColor: 'rgb(60,40,70)',
                   backdropFilter: 'blur(10px)'
                 }}
               >

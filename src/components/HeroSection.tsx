@@ -12,7 +12,7 @@ const HeroSection: React.FC = () => {
           backgroundImage: "url('https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?ixlib=rb-4.0.3')",
         }}
       >
-        <div className="absolute inset-0 bg-[#0f0719] opacity-90"></div>
+        <div className="absolute inset-0 bg-[#1a0f2e] opacity-90"></div>
       </div>
 
       <div className="relative container mx-auto px-4 h-full flex flex-col justify-center items-center text-center text-white">
