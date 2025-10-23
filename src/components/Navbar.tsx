@@ -80,9 +80,9 @@ const Navbar: React.FC = () => {
 
         {/* Phone Number */}
         <div className="flex items-center gap-4">
-          <a href="tel:+78001234567" className="hidden md:flex items-center text-teal-300 font-medium">
+          <a href="tel:+79771081199" className="hidden md:flex items-center text-teal-300 font-medium">
             <Phone className="h-5 w-5 mr-2" />
-            8 (800) 123-45-67
+            +7 (977) 108-11-99
           </a>
           <Button className="bg-gradient-to-r from-teal-400 to-purple-500 hover:from-teal-500 hover:to-purple-600">
             Заказать
@@ -162,11 +162,11 @@ const Navbar: React.FC = () => {
             
             <div className="mt-6 pt-4 border-t border-white/20">
               <a 
-                href="tel:+78001234567" 
+                href="tel:+79771081199" 
                 className="flex items-center text-teal-300 font-medium"
               >
                 <Phone className="h-5 w-5 mr-2" />
-                8 (800) 123-45-67
+                +7 (977) 108-11-99
               </a>
             </div>
           </div>
