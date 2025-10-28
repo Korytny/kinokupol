@@ -7,7 +7,7 @@ const CTASection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 section-title">
-            Готовы создать незабываемое впечатление с КиноКупол?
+            Готовы создать незабываемое впечатление с КиноСфера?
           </h2>
           <p className="text-lg text-[#80dfd5]/80 mb-8">
             Свяжитесь с нами, чтобы обсудить ваш проект и выбрать оптимальное купольное решение
@@ -23,7 +23,7 @@ const CTASection = () => {
           </div>
           
           <p className="mt-8 text-sm text-[#80dfd5]/70">
-            Также вы можете связаться с нами по телефону <a href="tel:+78001234567" className="underline">8 (800) 123-45-67</a>
+            Также вы можете связаться с нами по телефону <a href="tel:+79771081199" className="underline">+7 (977) 108-11-99</a>
           </p>
         </div>
       </div>

@@ -66,7 +66,7 @@ const EventsSection: React.FC = () => {
               <div className="absolute -inset-0.5 bg-gradient-to-r from-teal-400 to-purple-500 rounded-xl blur opacity-50"></div>
                 <img 
                   src="/img/post1.jpg" 
-                  alt="Мероприятия под куполом КиноКупол" 
+                  alt="Мероприятия под куполом КиноСфера" 
                   className="relative rounded-xl w-full h-[400px] object-cover border border-white/20" 
                   loading="lazy"
                   decoding="async"

@@ -6,7 +6,7 @@ const FeaturesSection = () => {
     <section id="features" className="section section-dark">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="section-title">Преимущества куполов КиноКупол</h2>
+          <h2 className="section-title">Преимущества куполов КиноСфера</h2>
           <p className="section-subtitle text-[#80dfd5]/80">
             Наши купольные решения предлагают уникальные возможности для вашего бизнеса или мероприятия
           </p>

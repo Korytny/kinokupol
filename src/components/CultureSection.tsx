@@ -16,7 +16,7 @@ const CultureSection: React.FC = () => {
           </h2>
           <div className="h-px w-24 bg-teal-400/50 mx-auto mb-6"></div>
           <p className="text-xl text-purple-100 leading-relaxed">
-            Трансформируйте выставочные пространства в иммерсивные купольные галереи для создания уникального культурного опыта
+            Трансформируйте выставочные пространства в иммерсивные купольные галереи для создания уникального иммерсивного опыта
           </p>
         </div>
         
@@ -25,7 +25,7 @@ const CultureSection: React.FC = () => {
             <div>
               <h3 className="text-2xl font-light mb-4 text-teal-200 tracking-wide">Музейные экспозиции</h3>
               <p className="text-purple-100 leading-relaxed">
-                Создание купольных пространств для музеев с возможностью полного погружения посетителей в исторические эпохи, природные ландшафты или художественные миры. Оживите экспонаты с помощью передовых проекционных технологий.
+                Создание купольных пространств для музеев с возможностью полного иммерсивного погружения посетителей в исторические эпохи, природные ландшафты или художественные миры. Оживите экспонаты с помощью передовых проекционных технологий.
               </p>
             </div>
             
@@ -56,7 +56,7 @@ const CultureSection: React.FC = () => {
                 <div className="absolute -inset-0.5 bg-gradient-to-r from-teal-400 to-purple-500 rounded-lg blur opacity-30"></div>
                 <img 
                   src="/img/post3.jpg" 
-                  alt="Культурные пространства под куполом КиноКупол" 
+                  alt="Культурные пространства под куполом КиноСфера" 
                   className="relative w-full h-64 object-cover rounded-lg border border-white/20"
                   loading="lazy"
                   decoding="async"
@@ -66,7 +66,7 @@ const CultureSection: React.FC = () => {
                 <div className="absolute -inset-0.5 bg-gradient-to-r from-teal-400 to-purple-500 rounded-lg blur opacity-30"></div>
                 <img 
                   src="/img/post4.jpg" 
-                  alt="Культурные мероприятия под куполом КиноКупол" 
+                  alt="Культурные мероприятия под куполом КиноСфера" 
                   className="relative w-full h-80 object-cover rounded-lg border border-white/20"
                   loading="lazy"
                   decoding="async"
@@ -78,7 +78,7 @@ const CultureSection: React.FC = () => {
                 <div className="absolute -inset-0.5 bg-gradient-to-r from-teal-400 to-purple-500 rounded-lg blur opacity-30"></div>
                 <img 
                   src="/img/post5.jpg" 
-                  alt="Музейные экспозиции под куполом КиноКупол" 
+                  alt="Музейные экспозиции под куполом КиноСфера" 
                   className="relative w-full h-80 object-cover rounded-lg border border-white/20"
                   loading="lazy"
                   decoding="async"
@@ -88,7 +88,7 @@ const CultureSection: React.FC = () => {
                 <div className="absolute -inset-0.5 bg-gradient-to-r from-teal-400 to-purple-500 rounded-lg blur opacity-30"></div>
                 <img 
                   src="/img/post7.jpg" 
-                  alt="Галереи искусств под куполом КиноКупол" 
+                  alt="Галереи искусств под куполом КиноСфера" 
                   className="relative w-full h-64 object-cover rounded-lg border border-white/20"
                   loading="lazy"
                   decoding="async"

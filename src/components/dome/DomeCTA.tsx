@@ -28,7 +28,7 @@ const DomeCTA = () => {
           </div>
           
           <p className="mt-8 text-sm text-purple-200">
-            Также вы можете связаться с нами по телефону <a href="tel:+78001234567" className="text-teal-300 hover:text-teal-200 underline">8 (800) 123-45-67</a>
+            Также вы можете связаться с нами по телефону <a href="tel:+79771081199" className="text-teal-300 hover:text-teal-200 underline">+7 (977) 108-11-99</a>
           </p>
         </div>
       </div>
