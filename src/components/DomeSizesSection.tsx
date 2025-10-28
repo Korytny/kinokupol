@@ -9,37 +9,69 @@ const domeSizes = [
   {
     id: "s",
     name: "Купол S",
-    description: "Компактный купол для небольших мероприятий до 30 человек",
-    capacity: "До 30 человек",
-    diameter: "6м",
+    description: "Компактный купол для небольших мероприятий",
+    capacity_standing: "10-25 человек",
+    capacity_seated: "4-16 человек",
+    diameter: "3-6м",
     height: "3м",
+    area: "6-28 м²",
+    projectors: "4 шт - 3К",
+    sound: "5/1",
+    air_conditioning: "нет",
+    assembly_time: "4 часа",
+    disassembly_time: "2 часа",
+    power_supply: "220В, 4кВт",
     image: "/img/s_dome.png"
   },
   {
     id: "m",
     name: "Купол M",
-    description: "Средний купол для мероприятий до 80 человек",
-    capacity: "До 80 человек",
-    diameter: "10м",
-    height: "5м",
+    description: "Средний купол для мероприятий",
+    capacity_standing: "40-140 человек",
+    capacity_seated: "20-60 человек",
+    diameter: "7-12м",
+    height: "4.2-6.5м",
+    area: "38-113 м²",
+    projectors: "6 шт - от 3 до 4К",
+    sound: "5/1",
+    air_conditioning: "Есть",
+    assembly_time: "6-8 часов",
+    disassembly_time: "3 часа",
+    power_supply: "380В, 7кВт",
     image: "/img/m_dome.png"
   },
   {
     id: "l",
     name: "Купол L",
-    description: "Большой купол для масштабных мероприятий до 200 человек",
-    capacity: "До 200 человек",
-    diameter: "15м",
-    height: "7.5м",
+    description: "Большой купол для масштабных мероприятий",
+    capacity_standing: "160-260 человек",
+    capacity_seated: "80-133 человек",
+    diameter: "14-16м",
+    height: "7.3-8.7м",
+    area: "154-201 м²",
+    projectors: "8-12 шт - от 4 до 5К",
+    sound: "7/1",
+    air_conditioning: "Есть",
+    assembly_time: "16-24 часа",
+    disassembly_time: "8 часов",
+    power_supply: "380В, 12кВт",
     image: "/img/l_dome.png"
   },
   {
     id: "xl",
     name: "Купол XL",
-    description: "Максимальный купол для крупных событий до 350 человек",
-    capacity: "До 350 человек",
-    diameter: "20м",
-    height: "10м",
+    description: "Максимальный купол для крупных событий",
+    capacity_standing: "410-1500 человек",
+    capacity_seated: "213-700 человек",
+    diameter: "21-35м",
+    height: "11.5-18.5м",
+    area: "346-962 м²",
+    projectors: "12-24 шт - от 5 до 6К",
+    sound: "7/1",
+    air_conditioning: "Есть",
+    assembly_time: "32-48 часов",
+    disassembly_time: "16 часов",
+    power_supply: "380В, 20кВт",
     image: "/img/xl_dome.png"
   }
 ];
@@ -87,11 +119,36 @@ const DomeSizesSection = () => {
                 <CardContent>
                   <div className="flex items-center gap-2 mb-2">
                     <Users className="h-4 w-4 text-teal-300" />
-                    <span className="text-sm text-purple-100">{dome.capacity}</span>
+                    <span className="text-sm text-purple-100">Вместимость (стоя): {dome.capacity_standing}</span>
                   </div>
-                  <div className="flex items-center gap-2">
+                  <div className="flex items-center gap-2 mb-2">
+                    <Users className="h-4 w-4 text-teal-300" />
+                    <span className="text-sm text-purple-100">Вместимость (сидя): {dome.capacity_seated}</span>
+                  </div>
+                  <div className="flex items-center gap-2 mb-2">
                     <Building className="h-4 w-4 text-teal-300" />
                     <span className="text-sm text-purple-100">Диаметр: {dome.diameter}, Высота: {dome.height}</span>
+                  </div>
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-sm text-purple-100">Площадь: {dome.area}</span>
+                  </div>
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-sm text-purple-100">Проекторы: {dome.projectors}</span>
+                  </div>
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-sm text-purple-100">Звук: {dome.sound}</span>
+                  </div>
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-sm text-purple-100">Кондиционирование: {dome.air_conditioning}</span>
+                  </div>
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-sm text-purple-100">Монтаж: {dome.assembly_time}</span>
+                  </div>
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-sm text-purple-100">Демонтаж: {dome.disassembly_time}</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-sm text-purple-100">Электропитание: {dome.power_supply}</span>
                   </div>
                 </CardContent>
                 <CardFooter>
