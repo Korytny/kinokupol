@@ -2,7 +2,8 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import HeroForm from "@/components/HeroForm";
+import HeroSection from "@/components/HeroSection";
+import BookingFormSection from "@/components/BookingFormSection";
 import DomeSizesSection from "@/components/DomeSizesSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import VideoSection from "@/components/VideoSection";
@@ -19,7 +20,8 @@ const Index: React.FC = () => {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       <div className="flex-grow">
-        <HeroForm />
+        <HeroSection />
+        <BookingFormSection />
         <EventsSection />
         <ScienceSection />
         <EntertainmentSection />

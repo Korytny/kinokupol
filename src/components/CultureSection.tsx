@@ -124,30 +124,45 @@ const CultureSection: React.FC = () => {
         <div className="flex flex-col md:flex-row gap-12 items-center">
           <div className="md:w-1/2">
             <h3 className="text-2xl font-light mb-6 text-teal-200 tracking-wide">Временная шкала культурных событий</h3>
-            <div className="space-y-8">
+            <div className="space-y-2"> {/* Changed from space-y-8 to space-y-4 */}
               {[
                 {
-                  year: "2023",
-                  title: "Выставка «Импрессионисты 360°»",
-                  description: "Купольная экспозиция работ французских импрессионистов с эффектом присутствия внутри картины"
+                  year: "2015-наст. вр.",
+                  title: "Ежегодный фестиваль науки МГУ",
+                  description: "г.Москва"
                 },
                 {
-                  year: "2024",
-                  title: "Фестиваль медиаискусства «Погружение»",
-                  description: "Международный фестиваль современного цифрового искусства в купольном формате"
+                  year: "2017-2018",
+                  title: "Иммерсивный Тур Coca-Cola",
+                  description: "по России"
                 },
                 {
-                  year: "2024",
-                  title: "Историческая реконструкция «Древняя Греция»",
-                  description: "Образовательный проект с воссозданием архитектуры и быта древнегреческих полисов"
+                  year: "2019-2021",
+                  title: "Абрау Дюрсо",
+                  description: "г.Москва/ г.Краснодар"
+                },
+                {
+                  year: "2018-2022",
+                  title: "Театр Имени Стаса Намина",
+                  description: "г.Москва, (Парк Горького)"
+                },
+                {
+                  year: "2018-2019",
+                  title: "Иммерсивное выставочное пространство Samskara",
+                  description: "г.Москва, Art Play"
+                },
+                {
+                  year: "2019-2020",
+                  title: "Иммерсивное выставочное пространство Mystic Universe",
+                  description: "г.Москва, Art Play"
                 }
               ].map((event, index) => (
-                <div key={index} className="flex">
-                  <div className="mr-6 text-lg font-medium text-purple-300 w-16">{event.year}</div>
-                  <div>
-                    <h4 className="text-lg font-medium text-purple-100 mb-1">{event.title}</h4>
-                    <p className="text-purple-200">{event.description}</p>
-                  </div>
+                <div key={index}> {/* Removed className="flex" */}
+                  <h4 className="text-lg font-medium text-purple-100"> {/* Removed mb-1 */}
+                    <span className="text-purple-300 text-base mr-2">{event.year}</span> {/* Year integrated and styled */}
+                    {event.title}
+                  </h4>
+                  <p className="text-purple-200 text-right italic">{event.description}</p>
                 </div>
               ))}
             </div>
