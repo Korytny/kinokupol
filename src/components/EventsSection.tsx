@@ -95,11 +95,7 @@ const EventsSection: React.FC = () => {
             {eventCases.map((caseItem, index) => (
               <div 
                 key={index} 
-                className="rounded-xl transition-all duration-300 border border-white/20 overflow-hidden hover:bg-[rgb(60,30,60)]"
-                style={{ 
-                  backgroundColor: 'rgb(40,20,40)',
-                  backdropFilter: 'blur(10px)'
-                }}
+                className="bg-slate-900/50 border border-white/20 text-white rounded-2xl overflow-hidden hover:border-teal-300/50 transition-all duration-300 transform hover:-translate-y-2 shadow-lg hover:shadow-xl"
               >
                 <div className="h-48 overflow-hidden relative">
                   <img 

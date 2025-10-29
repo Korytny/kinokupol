@@ -22,11 +22,7 @@ const ScienceSection: React.FC = () => {
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
           <div 
-            className="p-8 rounded-xl transition-all duration-300 border border-white/20 hover:bg-[rgb(60,30,60)]"
-            style={{ 
-              backgroundColor: 'rgb(40,20,40)',
-              backdropFilter: 'blur(10px)'
-            }}
+            className="bg-slate-900/50 border border-white/20 text-white rounded-2xl overflow-hidden hover:border-teal-300/50 transition-all duration-300 transform hover:-translate-y-2 shadow-lg hover:shadow-xl p-8"
           >
             <Globe className="h-12 w-12 text-teal-300 mb-4" />
             <h3 className="text-2xl font-semibold mb-4 text-teal-200">Планетарии</h3>
@@ -46,11 +42,7 @@ const ScienceSection: React.FC = () => {
           </div>
           
           <div 
-            className="p-8 rounded-xl transition-all duration-300 border border-white/20 hover:bg-[rgb(60,30,60)]"
-            style={{ 
-              backgroundColor: 'rgb(40,20,40)',
-              backdropFilter: 'blur(10px)'
-            }}
+            className="bg-slate-900/50 border border-white/20 text-white rounded-2xl overflow-hidden hover:border-teal-300/50 transition-all duration-300 transform hover:-translate-y-2 shadow-lg hover:shadow-xl p-8"
           >
             <FlaskConical className="h-12 w-12 text-teal-300 mb-4" />
             <h3 className="text-2xl font-semibold mb-4 text-teal-200">Научные центры</h3>
@@ -70,11 +62,7 @@ const ScienceSection: React.FC = () => {
           </div>
           
           <div 
-            className="p-8 rounded-xl transition-all duration-300 border border-white/20 hover:bg-[rgb(60,30,60)]"
-            style={{ 
-              backgroundColor: 'rgb(40,20,40)',
-              backdropFilter: 'blur(10px)'
-            }}
+            className="bg-slate-900/50 border border-white/20 text-white rounded-2xl overflow-hidden hover:border-teal-300/50 transition-all duration-300 transform hover:-translate-y-2 shadow-lg hover:shadow-xl p-8"
           >
             <AtomIcon className="h-12 w-12 text-teal-300 mb-4" />
             <h3 className="text-2xl font-semibold mb-4 text-teal-200">Образование</h3>

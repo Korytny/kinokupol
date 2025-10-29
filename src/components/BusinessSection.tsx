@@ -32,7 +32,7 @@ const BusinessSection: React.FC = () => {
           <div className="lg:w-1/2">
             <div className="relative">
               <div className="absolute -inset-0.5 bg-gradient-to-r from-teal-400 to-purple-500 rounded-lg blur opacity-30"></div>
-              <div className="relative bg-white/10 backdrop-blur-sm rounded-lg overflow-hidden border border-white/20">
+              <div className="relative bg-slate-900/50 border border-white/20 text-white rounded-2xl overflow-hidden hover:border-teal-300/50 transition-all duration-300 transform hover:-translate-y-2 shadow-lg hover:shadow-xl">
                 <div className="p-1 bg-gradient-to-r from-teal-400 to-purple-500"></div>
                 <div className="p-8">
                   <div className="flex justify-between items-start mb-6">
@@ -104,11 +104,7 @@ const BusinessSection: React.FC = () => {
           ].map((card, index) => (
             <div 
               key={index} 
-              className="rounded-xl p-8 border border-white/20 hover:bg-[rgb(60,30,60)] transition-all duration-300"
-              style={{
-                backgroundColor: 'rgb(40,20,40)',
-                backdropFilter: 'blur(10px)'
-              }}
+              className="bg-slate-900/50 border border-white/20 text-white rounded-2xl overflow-hidden hover:border-teal-300/50 transition-all duration-300 transform hover:-translate-y-2 shadow-lg hover:shadow-xl p-8"
             >
               <div className="bg-teal-400/20 p-3 rounded-xl inline-block mb-6">
                 {card.icon}

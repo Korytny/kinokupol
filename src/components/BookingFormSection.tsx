@@ -15,31 +15,31 @@ const BookingFormSection = () => {
   const [size, setSize] = useState("");
 
   return (
-    <section className="section section-dark">
+    <section className="relative z-10 section section-dark -mt-24">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl text-center mb-8 text-white">
+        <h2 className="text-4xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-teal-200 text-center">
           Создавайте незабываемые впечатления выбрав свой купол
         </h2>
-        <div className="bg-white/95 backdrop-blur-sm rounded-xl p-6 w-full max-w-4xl shadow-lg mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="flex flex-col">
-              <label className="text-slate-800 font-medium mb-1 text-left">Ваш город</label>
+        <div className="bg-slate-900/50 border border-white/20 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 w-full max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4 items-end">
+            <div className="flex flex-col md:col-span-1">
+              <label className="text-purple-200 font-medium mb-2 text-left">Ваш город</label>
               <Input
                 type="text"
                 placeholder="Выберите город"
                 value={city}
                 onChange={(e) => setCity(e.target.value)}
-                className="p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#80dfd5] text-slate-800 bg-white"
+                className="bg-slate-800/60 border-white/20 rounded-lg text-white placeholder:text-purple-200/70 focus:ring-2 focus:ring-teal-300/50"
               />
             </div>
 
-            <div className="flex flex-col">
-              <label className="text-slate-800 font-medium mb-1 text-left">Категория</label>
+            <div className="flex flex-col md:col-span-1">
+              <label className="text-purple-200 font-medium mb-2 text-left">Категория</label>
               <Select onValueChange={setCategory} value={category}>
-                <SelectTrigger className="p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#80dfd5] text-slate-800 bg-white">
+                <SelectTrigger className="bg-slate-800/60 border-white/20 rounded-lg text-white placeholder:text-purple-200/70 focus:ring-2 focus:ring-teal-300/50">
                   <SelectValue placeholder="Выберите категорию" />
                 </SelectTrigger>
-                <SelectContent className="bg-white">
+                <SelectContent className="bg-slate-800 border-white/20 text-white">
                   <SelectItem value="мероприятия">Мероприятия</SelectItem>
                   <SelectItem value="наука">Наука</SelectItem>
                   <SelectItem value="развлечения">Развлечения</SelectItem>
@@ -49,13 +49,13 @@ const BookingFormSection = () => {
               </Select>
             </div>
 
-            <div className="flex flex-col">
-              <label className="text-slate-800 font-medium mb-1 text-left">Размер купола</label>
+            <div className="flex flex-col md:col-span-1">
+              <label className="text-purple-200 font-medium mb-2 text-left">Размер купола</label>
               <Select onValueChange={setSize} value={size}>
-                <SelectTrigger className="p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#80dfd5] text-slate-800 bg-white">
+                <SelectTrigger className="bg-slate-800/60 border-white/20 rounded-lg text-white placeholder:text-purple-200/70 focus:ring-2 focus:ring-teal-300/50">
                   <SelectValue placeholder="Выберите размер" />
                 </SelectTrigger>
-                <SelectContent className="bg-white">
+                <SelectContent className="bg-slate-800 border-white/20 text-white">
                   <SelectItem value="S">S (5-10 человек)</SelectItem>
                   <SelectItem value="M">M (10-50 человек)</SelectItem>
                   <SelectItem value="L">L (50-100 человек)</SelectItem>
@@ -63,10 +63,8 @@ const BookingFormSection = () => {
                 </SelectContent>
               </Select>
             </div>
-          </div>
-
-          <div className="mt-4 flex justify-end">
-            <Button className="btn-primary">
+            
+            <Button className="w-full md:col-span-1 bg-gradient-to-r from-teal-400 to-purple-500 hover:from-teal-500 hover:to-purple-600 text-white h-10">
               Подобрать купол
             </Button>
           </div>

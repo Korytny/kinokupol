@@ -6,7 +6,7 @@ interface TestimonialType {
   author: string;
   position: string;
   company: string;
-  logo: string;
+  imageUrl: string;
 }
 
 const testimonials: TestimonialType[] = [
@@ -15,14 +15,14 @@ const testimonials: TestimonialType[] = [
     author: "Иван Смирнов",
     position: "Директор по маркетингу",
     company: "TechData",
-    logo: "TD"
+    imageUrl: "/img/post1.jpg"
   },
   {
     text: "Корпоративное мероприятие в формате купола позволило нам представить стратегию развития компании в совершенно новом свете.",
     author: "Елена Васильева",
     position: "CEO",
     company: "Global Systems",
-    logo: "GS"
+    imageUrl: "/img/post2.jpg"
   }
 ];
 
@@ -46,23 +46,16 @@ const TestimonialsSection: React.FC = () => {
             {testimonials.map((testimonial, index) => (
               <div 
                 key={index} 
-                className="p-6 rounded-lg border border-white/20 hover:bg-[rgb(60,30,60)] transition-all duration-300"
-                style={{
-                  backgroundColor: 'rgb(60,40,70)',
-                  backdropFilter: 'blur(10px)'
-                }}
+                className="bg-slate-900/50 border border-white/20 text-white rounded-2xl overflow-hidden hover:border-teal-300/50 transition-all duration-300 transform hover:-translate-y-2 shadow-lg hover:shadow-xl p-6"
               >
                 <div className="flex items-center mb-4">
-                  <div className="bg-teal-400 text-slate-900 w-10 h-10 rounded-full flex items-center justify-center font-bold mr-4">
-                    {testimonial.logo}
-                  </div>
+                  <img src={testimonial.imageUrl} alt={testimonial.author} className="w-12 h-12 rounded-full object-cover mr-4" />
                   <div>
-                    <div className="font-medium text-white">{testimonial.company}</div>
-                    <div className="text-sm text-purple-300">{testimonial.position}</div>
+                    <div className="font-medium text-white">{testimonial.author}</div>
+                    <div className="text-sm text-purple-300">{testimonial.position}, {testimonial.company}</div>
                   </div>
                 </div>
                 <p className="italic text-purple-100 mb-4">"{testimonial.text}"</p>
-                <div className="text-sm font-medium text-white">— {testimonial.author}</div>
               </div>
             ))}
           </div>

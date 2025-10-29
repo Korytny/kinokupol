@@ -89,7 +89,7 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-center gap-2 text-purple-200">
                 <Phone className="h-5 w-5 text-teal-300" />
-                <span>8 (800) 123-45-67</span>
+                <span>+7 (977) 108-11-99</span>
               </li>
               <li className="flex items-center gap-2 text-purple-200">
                 <MapPin className="h-5 w-5 text-teal-300" />

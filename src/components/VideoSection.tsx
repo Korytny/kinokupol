@@ -169,7 +169,7 @@ const VideoSection: React.FC = () => {
                 <CarouselItem key={video.id} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
                   <div className="group relative">
                     <div 
-                      className="relative rounded-xl overflow-hidden cursor-pointer border border-white/20 hover:border-[#80dfd5]/50 transition-all duration-300 hover:scale-[1.02]"
+                      className="relative bg-slate-900/50 border border-white/20 text-white rounded-2xl overflow-hidden hover:border-teal-300/50 transition-all duration-300 transform hover:-translate-y-2 shadow-lg hover:shadow-xl cursor-pointer"
                       onClick={() => openVideo(video)}
                     >
                       {/* Video Preview */}

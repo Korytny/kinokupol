@@ -45,11 +45,7 @@ const DomeHero = () => {
       <div className="container mx-auto px-4 h-full flex flex-col justify-center">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div 
-            className="rounded-xl p-8 border border-white/20 text-center"
-            style={{
-              backgroundColor: 'rgb(40,20,40)',
-              backdropFilter: 'blur(10px)'
-            }}
+            className="bg-slate-900/50 border border-white/20 text-white rounded-2xl overflow-hidden hover:border-teal-300/50 transition-all duration-300 transform hover:-translate-y-2 shadow-lg hover:shadow-xl p-8 text-center"
           >
           <h1 className="text-4xl md:text-6xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-teal-200">
             {domeData.name}
@@ -59,31 +55,19 @@ const DomeHero = () => {
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4 mb-8 mx-auto">
             <div 
-              className="flex items-center px-4 py-2 rounded-full border border-white/20"
-              style={{
-                backgroundColor: 'rgb(40,20,40)',
-                backdropFilter: 'blur(10px)'
-              }}
+              className="flex items-center bg-white/10 rounded-full py-1 px-3 text-sm"
             >
               <Building className="h-5 w-5 text-teal-300 mr-2" />
               <span className="text-purple-100">Диаметр: {domeData.diameter}</span>
             </div>
             <div 
-              className="flex items-center px-4 py-2 rounded-full border border-white/20"
-              style={{
-                backgroundColor: 'rgb(40,20,40)',
-                backdropFilter: 'blur(10px)'
-              }}
+              className="flex items-center bg-white/10 rounded-full py-1 px-3 text-sm"
             >
               <Building className="h-5 w-5 text-teal-300 mr-2" />
               <span className="text-purple-100">Высота: {domeData.height}</span>
             </div>
             <div 
-              className="flex items-center px-4 py-2 rounded-full border border-white/20"
-              style={{
-                backgroundColor: 'rgb(40,20,40)',
-                backdropFilter: 'blur(10px)'
-              }}
+              className="flex items-center bg-white/10 rounded-full py-1 px-3 text-sm"
             >
               <Building className="h-5 w-5 text-teal-300 mr-2" />
               <span className="text-purple-100">Вместимость: {domeData.capacity}</span>
@@ -93,7 +77,7 @@ const DomeHero = () => {
             Забронировать купол
           </Button>
         </div>
-        <div className="bg-gray-700/50 rounded-xl h-96 w-full overflow-hidden border border-white/20">
+        <div className="h-96 w-full">
           <img 
             src={`/img/${domeSize}_dome.png`}
             alt={`Фотография купола ${domeData.name}`}

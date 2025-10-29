@@ -2,7 +2,7 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <section className="relative h-[700px] overflow-hidden">
+    <section className="relative h-[800px] overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{

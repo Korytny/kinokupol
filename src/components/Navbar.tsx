@@ -60,11 +60,11 @@ const Navbar: React.FC = () => {
             </button>
             <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-slate-800/95 backdrop-blur-sm ring-1 ring-white/10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
               <div className="py-1" role="menu" aria-orientation="vertical">
-                <a href="#" className="block px-4 py-2 text-sm text-white hover:bg-teal-500/20 hover:text-teal-300" role="menuitem">Мероприятия</a>
-                <a href="#" className="block px-4 py-2 text-sm text-white hover:bg-teal-500/20 hover:text-teal-300" role="menuitem">Наука</a>
-                <a href="#" className="block px-4 py-2 text-sm text-white hover:bg-teal-500/20 hover:text-teal-300" role="menuitem">Развлечения</a>
-                <a href="#" className="block px-4 py-2 text-sm text-white hover:bg-teal-500/20 hover:text-teal-300" role="menuitem">Культура</a>
-                <a href="#" className="block px-4 py-2 text-sm text-white hover:bg-teal-500/20 hover:text-teal-300" role="menuitem">Бизнес</a>
+                <Link to="/category/events" className="block px-4 py-2 text-sm text-white hover:bg-teal-500/20 hover:text-teal-300" role="menuitem">Мероприятия</Link>
+                <Link to="/category/science" className="block px-4 py-2 text-sm text-white hover:bg-teal-500/20 hover:text-teal-300" role="menuitem">Наука</Link>
+                <Link to="/category/entertainment" className="block px-4 py-2 text-sm text-white hover:bg-teal-500/20 hover:text-teal-300" role="menuitem">Развлечения</Link>
+                <Link to="/category/culture" className="block px-4 py-2 text-sm text-white hover:bg-teal-500/20 hover:text-teal-300" role="menuitem">Культура</Link>
+                <Link to="/category/business" className="block px-4 py-2 text-sm text-white hover:bg-teal-500/20 hover:text-teal-300" role="menuitem">Бизнес</Link>
               </div>
             </div>
           </div>
@@ -74,8 +74,8 @@ const Navbar: React.FC = () => {
           >
             Видео
           </button>
-          <a href="#" className="text-white hover:text-teal-300 transition-colors">О нас</a>
-          <a href="#" className="text-white hover:text-teal-300 transition-colors">Контакты</a>
+          <button onClick={() => scrollToSection('features')} className="text-white hover:text-teal-300 transition-colors cursor-pointer">О нас</button>
+          <button onClick={() => scrollToSection('contact')} className="text-white hover:text-teal-300 transition-colors cursor-pointer">Контакты</button>
         </div>
 
         {/* Phone Number */}

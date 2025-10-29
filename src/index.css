@@ -106,7 +106,7 @@
   }
   
   .section-subtitle {
-    @apply text-lg max-w-3xl mx-auto mb-12;
+    @apply text-lg mx-auto mb-12;
   }
 }
 

@@ -10,11 +10,7 @@ const DomeSpecs = () => {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div 
-            className="rounded-xl p-6 border border-white/20 hover:bg-[rgb(60,30,60)] transition-all duration-300"
-            style={{
-              backgroundColor: 'rgb(40,20,40)',
-              backdropFilter: 'blur(10px)'
-            }}
+            className="bg-slate-900/50 border border-white/20 text-white rounded-2xl overflow-hidden hover:border-teal-300/50 transition-all duration-300 transform hover:-translate-y-2 shadow-lg hover:shadow-xl p-6"
           >
             <h3 className="text-xl font-semibold mb-3 text-teal-200">Размеры</h3>
             <ul className="space-y-2 text-purple-100">
@@ -38,11 +34,7 @@ const DomeSpecs = () => {
           </div>
 
           <div 
-            className="rounded-xl p-6 border border-white/20 hover:bg-[rgb(60,30,60)] transition-all duration-300"
-            style={{
-              backgroundColor: 'rgb(40,20,40)',
-              backdropFilter: 'blur(10px)'
-            }}
+            className="bg-slate-900/50 border border-white/20 text-white rounded-2xl overflow-hidden hover:border-teal-300/50 transition-all duration-300 transform hover:-translate-y-2 shadow-lg hover:shadow-xl p-6"
           >
             <h3 className="text-xl font-semibold mb-3 text-teal-200">Оборудование</h3>
             <ul className="space-y-2 text-purple-100">
@@ -66,11 +58,7 @@ const DomeSpecs = () => {
           </div>
 
           <div 
-            className="rounded-xl p-6 border border-white/20 hover:bg-[rgb(60,30,60)] transition-all duration-300"
-            style={{
-              backgroundColor: 'rgb(40,20,40)',
-              backdropFilter: 'blur(10px)'
-            }}
+            className="bg-slate-900/50 border border-white/20 text-white rounded-2xl overflow-hidden hover:border-teal-300/50 transition-all duration-300 transform hover:-translate-y-2 shadow-lg hover:shadow-xl p-6"
           >
             <h3 className="text-xl font-semibold mb-3 text-teal-200">Логистика</h3>
             <ul className="space-y-2 text-purple-100">

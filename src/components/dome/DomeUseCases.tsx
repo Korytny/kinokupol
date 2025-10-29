@@ -11,28 +11,28 @@ const DomeUseCases = () => {
       id: "events",
       title: "Мероприятия",
       description: "Фестивали, выставки, презентации",
-      image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30",
+      image: "/img/post1.jpg",
       icon: <Calendar className="h-5 w-5 text-teal-300" />
     },
     {
       id: "science",
       title: "Наука",
       description: "Планетарии, научные визуализации",
-      image: "https://images.unsplash.com/photo-1516339901601-2e1b62dc0c45",
+      image: "/img/post2.jpg",
       icon: <BookOpen className="h-5 w-5 text-teal-300" />
     },
     {
       id: "culture",
       title: "Культура",
       description: "Музеи, выставки, галереи искусства",
-      image: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819",
+      image: "/img/post3.jpg",
       icon: <Landmark className="h-5 w-5 text-teal-300" />
     },
     {
       id: "business",
       title: "Бизнес",
       description: "Корпоративные мероприятия, тренинги",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978",
+      image: "/img/post4.jpg",
       icon: <Briefcase className="h-5 w-5 text-teal-300" />
     }
   ];
