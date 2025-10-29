@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Gamepad, PartyPopper, Theater } from "lucide-react";
 import HowItWorksSection from "./HowItWorksSection";
@@ -108,10 +109,12 @@ const EntertainmentSection: React.FC = () => {
               </div>
               
               <div className="mt-8">
-                <Button className="bg-gradient-to-r from-teal-400 to-purple-500 hover:from-teal-500 hover:to-purple-600 text-white w-full py-6 rounded-xl border-0">
-                  <PartyPopper className="mr-2 h-5 w-5" />
-                  Забронировать развлекательную программу
-                </Button>
+                <Link to="/category/entertainment">
+                  <Button className="bg-gradient-to-r from-teal-400 to-purple-500 hover:from-teal-500 hover:to-purple-600 text-white w-full py-6 rounded-xl border-0">
+                    <PartyPopper className="mr-2 h-5 w-5" />
+                    Узнать больше о развлечениях в КиноСфере
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>

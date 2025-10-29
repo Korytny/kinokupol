@@ -14,6 +14,20 @@ const BookingFormSection = () => {
   const [category, setCategory] = useState("");
   const [size, setSize] = useState("");
 
+  const handleBooking = () => {
+    const subject = "Подбор купола";
+    const body = `Здравствуйте!
+
+Прошу подобрать купол со следующими параметрами:
+- Город: ${city || "не указан"}
+- Категория: ${category || "не указана"}
+- Размер: ${size || "не указан"}
+
+Свяжитесь со мной для дальнейшего обсуждения.
+`;
+    window.location.href = `mailto:info@kinosfera.pro?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  };
+
   return (
     <section className="relative z-10 section section-dark -mt-24">
       <div className="container mx-auto px-4">
@@ -64,7 +78,7 @@ const BookingFormSection = () => {
               </Select>
             </div>
             
-            <Button className="w-full md:col-span-1 bg-gradient-to-r from-teal-400 to-purple-500 hover:from-teal-500 hover:to-purple-600 text-white h-10">
+            <Button onClick={handleBooking} className="w-full md:col-span-1 bg-gradient-to-r from-teal-400 to-purple-500 hover:from-teal-500 hover:to-purple-600 text-white h-10">
               Подобрать купол
             </Button>
           </div>

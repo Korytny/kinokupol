@@ -84,7 +84,7 @@ const Navbar: React.FC = () => {
             <Phone className="h-5 w-5 mr-2" />
             +7 (977) 108-11-99
           </a>
-          <Button className="bg-gradient-to-r from-teal-400 to-purple-500 hover:from-teal-500 hover:to-purple-600">
+          <Button onClick={() => scrollToSection('contact')} className="bg-gradient-to-r from-teal-400 to-purple-500 hover:from-teal-500 hover:to-purple-600">
             Заказать
           </Button>
           <Button 

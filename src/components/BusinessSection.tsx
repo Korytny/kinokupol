@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Briefcase, ChartBar, DollarSign } from "lucide-react";
 
@@ -21,9 +22,11 @@ const BusinessSection: React.FC = () => {
               Купольные пространства создают уникальную атмосферу для запуска продуктов, корпоративных мероприятий и презентаций бренда, оставляя неизгладимое впечатление у ваших клиентов и партнеров.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button className="bg-gradient-to-r from-teal-400 to-purple-500 hover:from-teal-500 hover:to-purple-600 text-white px-6">
-                Запросить предложение
-              </Button>
+              <Link to="/category/business">
+                <Button className="bg-gradient-to-r from-teal-400 to-purple-500 hover:from-teal-500 hover:to-purple-600 text-white px-6">
+                  Подробнее о Бизнес мероприятиях с КиноСферой
+                </Button>
+              </Link>
               <Button variant="outline" className="border-white/30 text-white hover:bg-white/10">
                 Смотреть кейсы
               </Button>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { GalleryHorizontal } from "lucide-react";
 
@@ -45,9 +46,11 @@ const CultureSection: React.FC = () => {
               </p>
             </div>
             
-            <Button className="bg-gradient-to-r from-teal-400 to-purple-500 hover:from-teal-500 hover:to-purple-600 text-white">
-              Консультация по культурным проектам
-            </Button>
+            <Link to="/category/culture">
+              <Button className="bg-gradient-to-r from-teal-400 to-purple-500 hover:from-teal-500 hover:to-purple-600 text-white">
+                Подробно о применении КиноСферы в Культуре
+              </Button>
+            </Link>
           </div>
           
           <div className="grid grid-cols-2 gap-6">

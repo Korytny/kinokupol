@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Calendar, Star, GalleryHorizontal } from "lucide-react";
 
@@ -56,9 +57,11 @@ const EventsSection: React.FC = () => {
                 <span className="text-purple-100">Уникальный опыт</span>
               </div>
             </div>
-            <Button className="bg-gradient-to-r from-teal-400 to-purple-500 border-0 hover:from-teal-500 hover:to-purple-600">
-              Узнать больше о мероприятиях
-            </Button>
+            <Link to="/category/events">
+              <Button className="bg-gradient-to-r from-teal-400 to-purple-500 border-0 hover:from-teal-500 hover:to-purple-600">
+                Узнать больше о мероприятиях
+              </Button>
+            </Link>
           </div>
           
           <div className="md:w-1/2">

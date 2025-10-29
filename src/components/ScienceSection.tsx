@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { AtomIcon, Globe, FlaskConical } from "lucide-react";
 
@@ -122,9 +123,11 @@ const ScienceSection: React.FC = () => {
                 </div>
               </li>
             </ul>
-            <Button className="mt-8 bg-gradient-to-r from-teal-400 to-purple-500 border-0 hover:from-teal-500 hover:to-purple-600">
-              Запросить техническую спецификацию
-            </Button>
+            <Link to="/category/science">
+              <Button className="mt-8 bg-gradient-to-r from-teal-400 to-purple-500 border-0 hover:from-teal-500 hover:to-purple-600">
+                Узнать о научной составляющей проектов
+              </Button>
+            </Link>
           </div>
         </div>
         

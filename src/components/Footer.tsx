@@ -52,29 +52,29 @@ const Footer: React.FC = () => {
             <h3 className="font-bold text-lg mb-4 text-white">Категории</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-purple-200 hover:text-teal-300 transition-colors">
+                <Link to="/category/events" className="text-purple-200 hover:text-teal-300 transition-colors">
                   Мероприятия
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-purple-200 hover:text-teal-300 transition-colors">
+                <Link to="/category/science" className="text-purple-200 hover:text-teal-300 transition-colors">
                   Наука
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-purple-200 hover:text-teal-300 transition-colors">
+                <Link to="/category/entertainment" className="text-purple-200 hover:text-teal-300 transition-colors">
                   Развлечения
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-purple-200 hover:text-teal-300 transition-colors">
+                <Link to="/category/culture" className="text-purple-200 hover:text-teal-300 transition-colors">
                   Культура
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-purple-200 hover:text-teal-300 transition-colors">
+                <Link to="/category/business" className="text-purple-200 hover:text-teal-300 transition-colors">
                   Бизнес
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

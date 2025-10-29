@@ -14,13 +14,16 @@ const CTASection = () => {
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
-            <Button className="bg-gradient-to-r from-teal-400 to-purple-500 border-0 hover:from-teal-500 hover:to-purple-600 text-white text-lg py-6">
-              Забронировать купол
-            </Button>
-            <Button variant="outline" className="border-[#80dfd5] text-[#80dfd5] hover:bg-[#80dfd5]/10 text-lg py-6">
-              Получить консультацию
-            </Button>
-          </div>
+            <a href="mailto:info@kinosfera.pro?subject=Бронирование купола&body=Здравствуйте, я хочу забронировать купол. Пришлите, пожалуйста, календарь и прайс.">
+              <Button className="bg-gradient-to-r from-teal-400 to-purple-500 border-0 hover:from-teal-500 hover:to-purple-600 text-white text-lg py-6">
+                Забронировать купол
+              </Button>
+            </a>
+                        <a href="mailto:info@kinosfera.pro?subject=Запрос консультации&body=Здравствуйте, я хотел бы получить дополнительную информацию по куполам КиноСферы.">
+                          <Button variant="outline" className="border-[#80dfd5] text-[#80dfd5] hover:bg-[#80dfd5]/10 text-lg py-6">
+                            Получить консультацию
+                          </Button>
+                        </a>          </div>
           
           <p className="mt-8 text-sm text-[#80dfd5]/70">
             Также вы можете связаться с нами по телефону <a href="tel:+79771081199" className="underline">+7 (977) 108-11-99</a>
